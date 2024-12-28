@@ -1,0 +1,401 @@
+.back__img-section {
+    height: 400px;
+    background-image: url("../assets/profilebackground.png");
+}
+
+.profile__section {
+    margin-top: -176px;
+    margin-bottom: 67px;
+}
+
+.profile {
+    display: flex;
+    gap: 64px;
+}
+
+.profile__view {
+    width: 352px;
+    height: 547px;
+    border: 1px solid #e6e8ec;
+    box-shadow: 0px 64px 64px -48px #0f0f0f14;
+    border-radius: 24px;
+    padding: 32px 80px;
+    background-color: #fcfcfd;
+}
+
+.profile__view-img {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.profile__view-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 50%;
+}
+
+.profile__view-img span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: #62b3fd;
+}
+
+.profile__view-name {
+    font-family: "DM Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #23262f;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.profile_view-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.profile_view-btns div {
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile_view-cotact-btn {
+    width: 89px;
+    height: 40px;
+    border-radius: 90px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+    background-color: #05dbf3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.profile_view-file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e6e8ec;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.profile_view-btns div input {
+    display: none;
+}
+
+.profile_view-all-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e6e8ec;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__view-social-network {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 24px;
+}
+
+.profile__view-social-network a {
+    width: 20px;
+    height: 20px;
+}
+
+.profile__view hr {
+    border: 1px solid #e6e8ec;
+    margin-top: 32px;
+}
+
+.profile__view-member {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.profile__view-report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.profile__view-report svg {
+    width: 12px;
+    height: 12px;
+    color: #777e90;
+}
+
+.profile__view-report p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+}
+
+.profile__desc {
+    width: 100%;
+    padding-top: 220px;
+}
+
+.profile__desc-top-introduce {
+    width: 100px;
+    height: 28px;
+    border-radius: 100px;
+    background-color: #05dbf3;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.profile__desc-top-tour {
+    width: 87px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #777e90;
+}
+
+.profile__desc-top-gallery {
+    width: 82px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #777e90;
+    cursor: pointer;
+}
+
+.profile__desc-about {
+    margin-top: 48px;
+}
+
+.profile__desc-about-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #23262f;
+}
+
+.profile__desc-about-desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #353945;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.profile__desc-about-experiense {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.profile__desc-about-experiense span:first-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777e90;
+}
+
+.profile__desc-about-experiense span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #23262f;
+}
+
+.profile__desc-about-specialization {
+    display: flex;
+    gap: 108px;
+    margin-top: 16px;
+}
+
+.profile__desc-about-specialization span:first-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777e90;
+}
+
+.profile__desc-about-specialization span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #23262f;
+}
+
+.profile__desc-about-language {
+    display: flex;
+    gap: 97px;
+    margin-top: 16px;
+}
+
+.profile__desc-about-language span:first-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777e90;
+}
+
+.profile__desc-about-language span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #23262f;
+}
+
+.profile__desc-about-interests {
+    display: flex;
+    gap: 81px;
+    margin-top: 16px;
+}
+
+.profile__desc-about-interests span:first-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777e90;
+}
+
+.profile__desc-about-interests span:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #23262f;
+}
+
+.tour__list {
+    margin-top: 48px;
+}
+
+.tourlist {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #23262f;
+}
+
+.tourlist__card-item {
+    height: 365px;
+}
+
+.tourlist__card {
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.tourlist__card-item-img {
+    width: 100%;
+    height: 220px;
+    position: relative;
+}
+
+.tourlist__card-item-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.tourlist__card-item-img button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background-color: #fcfcfd;
+    box-shadow: 0px 8px 16px -8px #0f0f0f1a;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tourlist__card-item-desc {
+    padding: 20px 8px;
+}
+
+.tourlist__card-item-desc-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #141416;
+}
+
+.tourlist__card-item-desc hr {
+    border: 1px solid #e6e8ec;
+    margin-top: 44px;
+}
+
+.tourlist__card-item-desc span {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #777e90;
+    margin-top: 16px;
+    display: inline-block;
+}

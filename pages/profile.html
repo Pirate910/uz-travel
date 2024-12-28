@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>User profile</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../general/general.css" />
+        <link rel="stylesheet" href="../styles/profile.css" />
+        <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="log">
+                    <a class="logo__section" href="/"><img src="./assets/logo.png" alt="logo" />
+                        <div class="logo__name">
+                            <p>UzTravel</p>
+                            <p>Guide</p>
+                        </div>
+                    </a>
+                    <div class="navigation__menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="./uztravel/tripplan.html"
+                                        target="_blank"
+                                        >Plan to trip</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="./pages/destination.html"
+                                        target="_blank"
+                                        >Destination</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="./pages/accomodation.html"
+                                        target="_blank"
+                                        >Accomodation</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="./uztravel/index.html"
+                                        target="_blank"
+                                        >Food</a
+                                    >
+                                </li>
+                            </ul>
+                            <div class="language__section">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M8.00001 13.3333C10.9455 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9455 2.66659 8.00001 2.66659C5.05449 2.66659 2.66668 5.0544 2.66668 7.99992C2.66668 10.9454 5.05449 13.3333 8.00001 13.3333ZM8.00001 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00001 1.33325C4.31811 1.33325 1.33334 4.31802 1.33334 7.99992C1.33334 11.6818 4.31811 14.6666 8.00001 14.6666Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M9.16444 12.1177C9.65691 11.1327 9.99999 9.67876 9.99999 7.99992C9.99999 6.32108 9.65691 4.8671 9.16444 3.88216C8.6321 2.81747 8.14336 2.66659 7.99999 2.66659C7.85662 2.66659 7.36788 2.81747 6.83554 3.88216C6.34307 4.8671 5.99999 6.32108 5.99999 7.99992C5.99999 9.67876 6.34307 11.1327 6.83554 12.1177C7.36788 13.1824 7.85662 13.3333 7.99999 13.3333C8.14336 13.3333 8.6321 13.1824 9.16444 12.1177ZM7.99999 14.6666C9.84094 14.6666 11.3333 11.6818 11.3333 7.99992C11.3333 4.31802 9.84094 1.33325 7.99999 1.33325C6.15904 1.33325 4.66666 4.31802 4.66666 7.99992C4.66666 11.6818 6.15904 14.6666 7.99999 14.6666Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M14.6338 8.66659C14.6555 8.44731 14.6667 8.22492 14.6667 7.99992C14.6667 7.77492 14.6555 7.55252 14.6338 7.33325H1.36626C1.34449 7.55252 1.33334 7.77492 1.33334 7.99992C1.33334 8.22492 1.34449 8.44731 1.36626 8.66659H14.6338Z"
+                                        fill="#FCFCFD"
+                                    />
+                                </svg>
+                                <select>
+                                    <option value="eng">English</option>
+                                    <option value="rus">Русский</option>
+                                </select>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="wishlist">
+                        <a href="./pages/wishlist.html" target="_blank"
+                            >Wishlist</a
+                        >
+                        <div class="notification__bell">
+                            <svg
+                                width="18"
+                                height="19"
+                                viewBox="0 0 18 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M18 15.0233C18 15.5113 17.6043 15.907 17.1163 15.907H0.88372C0.395655 15.907 0 15.5113 0 15.0233C0 14.5352 0.395656 14.1395 0.883721 14.1395H0.9V7.98088C0.9 3.57288 4.527 0 9 0C13.473 0 17.1 3.57288 17.1 7.98088V14.1395H17.1163C17.6043 14.1395 18 14.5352 18 15.0233ZM2.7 14.1395H15.3V7.98088C15.3 4.5494 12.4794 1.76744 9 1.76744C5.5206 1.76744 2.7 4.5494 2.7 7.98088V14.1395ZM6.97604 17.7558C6.73121 17.2608 7.19772 16.7907 7.75 16.7907H10.25C10.8023 16.7907 11.2688 17.2608 11.024 17.7558C10.9155 17.9751 10.7699 18.1773 10.591 18.3529C10.169 18.7672 9.59674 19 9 19C8.40326 19 7.83097 18.7672 7.40901 18.3529C7.23013 18.1773 7.08449 17.9751 6.97604 17.7558Z"
+                                    fill="#033E8C"
+                                />
+                            </svg>
+                        </div>
+                        <div class="profile__img">
+                            <img src="./assets/profile__img.png" alt="img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="back__img-section"></section>
+
+        <section class="profile__section">
+            <div class="container">
+                <div class="profile">
+                    <div class="profile__view">
+                        <div class="profile__view-img">
+                            <img
+                                src="../assets/profile__view-img.png"
+                                alt="profile__view-img"
+                            />
+                            <span
+                                ><svg
+                                    width="18"
+                                    height="12"
+                                    viewBox="0 0 18 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.33398 6L6.33398 11L16.334 1"
+                                        stroke="#FCFCFD"
+                                        stroke-width="2"
+                                        stroke-miterlimit="10"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </span>
+                        </div>
+                        <h3 class="profile__view-name">Hanna</h3>
+                        <div class="profile_view-btns">
+                            <div>
+                                <button class="profile_view-cotact-btn">
+                                    Contact
+                                </button>
+                                <label
+                                    for="file__upload"
+                                    class="profile_view-file-upload"
+                                    ><svg
+                                        width="9"
+                                        height="13"
+                                        viewBox="0 0 9 13"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M2.17259 5.17251C1.84715 5.49794 1.31951 5.49794 0.994078 5.17251C0.668641 4.84707 0.668641 4.31943 0.994078 3.994L3.91074 1.07733C4.23618 0.751893 4.76382 0.751893 5.08926 1.07733L8.00592 3.994C8.33136 4.31943 8.33136 4.84707 8.00592 5.17251C7.68049 5.49794 7.15285 5.49794 6.82741 5.17251L5.33333 3.67843L5.33333 11.6666C5.33333 12.1268 4.96024 12.4999 4.5 12.4999C4.03976 12.4999 3.66667 12.1268 3.66667 11.6666L3.66667 3.67843L2.17259 5.17251Z"
+                                            fill="#777E91"
+                                        />
+                                    </svg>
+                                </label>
+                                <input id="file__upload" type="file" />
+                                <button class="profile_view-all-btn">
+                                    <svg
+                                        width="15"
+                                        height="4"
+                                        viewBox="0 0 15 4"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1.66667 0.333252C0.75 0.333252 0 1.08325 0 1.99992C0 2.91658 0.75 3.66658 1.66667 3.66658C2.58333 3.66658 3.33333 2.91658 3.33333 1.99992C3.33333 1.08325 2.58333 0.333252 1.66667 0.333252ZM13.3333 0.333252C12.4167 0.333252 11.6667 1.08325 11.6667 1.99992C11.6667 2.91658 12.4167 3.66658 13.3333 3.66658C14.25 3.66658 15 2.91658 15 1.99992C15 1.08325 14.25 0.333252 13.3333 0.333252ZM7.5 0.333252C6.58333 0.333252 5.83333 1.08325 5.83333 1.99992C5.83333 2.91658 6.58333 3.66658 7.5 3.66658C8.41667 3.66658 9.16667 2.91658 9.16667 1.99992C9.16667 1.08325 8.41667 0.333252 7.5 0.333252Z"
+                                            fill="#777E91"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="profile__view-social-network">
+                            <a href="">
+                                <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M2.19977 13.9C1.92855 13.9002 1.65997 13.8469 1.40937 13.7431C1.15877 13.6394 0.931076 13.4873 0.739297 13.2955C0.547518 13.1037 0.395416 12.876 0.291687 12.6254C0.187957 12.3748 0.134634 12.1063 0.134766 11.835V2.23504C0.134634 1.96383 0.187957 1.69524 0.291687 1.44465C0.395416 1.19405 0.547518 0.966355 0.739297 0.774576C0.931076 0.582796 1.15877 0.430695 1.40937 0.326965C1.65997 0.223236 1.92855 0.169913 2.19977 0.170044H11.7998C12.071 0.169913 12.3396 0.223236 12.5902 0.326965C12.8408 0.430695 13.0685 0.582796 13.2602 0.774576C13.452 0.966355 13.6041 1.19405 13.7078 1.44465C13.8116 1.69524 13.8649 1.96383 13.8648 2.23504V11.835C13.8649 12.1063 13.8116 12.3748 13.7078 12.6254C13.6041 12.876 13.452 13.1037 13.2602 13.2955C13.0685 13.4873 12.8408 13.6394 12.5902 13.7431C12.3396 13.8469 12.071 13.9002 11.7998 13.9H2.19977ZM10.5898 8.10004H9.13977V12.9H11.8098C11.9498 12.9 12.0884 12.8725 12.2177 12.8189C12.347 12.7653 12.4646 12.6868 12.5635 12.5878C12.6625 12.4888 12.741 12.3713 12.7946 12.242C12.8482 12.1127 12.8758 11.974 12.8758 11.834V2.23404C12.8758 1.95132 12.7635 1.68018 12.5635 1.48027C12.3636 1.28035 12.0925 1.16804 11.8098 1.16804H2.20977C1.92705 1.16804 1.6559 1.28035 1.45599 1.48027C1.25608 1.68018 1.14377 1.95132 1.14377 2.23404V11.834C1.14377 12.1168 1.25608 12.3879 1.45599 12.5878C1.6559 12.7877 1.92705 12.9 2.20977 12.9H7.53977V8.10004H5.93977V6.50004H7.53977V5.64104C7.53977 4.01104 8.33277 3.30104 9.67977 3.30104C10.3148 3.30104 10.6558 3.34704 10.8198 3.37004H10.8298V4.90004H9.90777C9.44277 4.90004 9.22277 5.10004 9.15677 5.50004C9.1407 5.60493 9.13301 5.71093 9.13377 5.81704V6.50004H10.8138L10.5858 8.10004H10.5898Z"
+                                        fill="#05DBF3"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg
+                                    width="20"
+                                    height="16"
+                                    viewBox="0 0 20 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M2.65115 9.6665C1.27305 9.67042 0.383457 11.2403 1.23245 12.4298C2.4483 14.133 4.6531 15.5 8.33395 15.5C14.0382 15.5 18.617 10.8514 17.976 5.35925L18.9151 3.48108C19.5664 2.17857 18.4347 0.69685 17.0067 0.98245L15.766 1.23057C15.4371 1.05702 15.0967 0.926058 14.8058 0.831175C14.2388 0.646267 13.5525 0.5 12.9173 0.5C11.7762 0.5 10.7914 0.792758 10.0087 1.37994C9.23495 1.96053 8.79911 2.72354 8.55995 3.42421C8.4497 3.74717 8.37628 4.07112 8.32917 4.38203C7.88645 4.24269 7.43502 4.05522 6.99307 3.82629C5.99041 3.30693 5.17961 2.64852 4.72224 2.07126C3.95488 1.10275 2.32868 1.17456 1.75803 2.43351C0.953746 4.20789 1.17437 6.31122 1.89732 8.01075C2.13964 8.58033 2.45485 9.14342 2.83994 9.66525C2.77401 9.666 2.71095 9.66633 2.65115 9.6665ZM8.33386 13.8333C5.11441 13.8333 3.44969 12.6672 2.5889 11.4614C2.55022 11.4072 2.58922 11.3333 2.65578 11.3332C3.53148 11.3307 5.32898 11.2892 6.51448 10.5954C6.57579 10.5595 6.5623 10.4691 6.49496 10.4465C3.73149 9.51733 2.16063 5.58216 3.27595 3.12158C3.30152 3.06517 3.37735 3.05772 3.41583 3.10628C4.68989 4.71432 7.47555 6.28933 9.8992 6.33242C9.95178 6.33333 9.99153 6.28558 9.98353 6.23361C9.88586 5.60044 9.51295 2.16667 12.9172 2.16667C13.7301 2.16667 14.9396 2.56319 15.3851 2.96942C15.4057 2.98819 15.4336 2.99672 15.4609 2.99125L17.3334 2.61675C17.4014 2.60315 17.4554 2.67371 17.4244 2.73573L16.2629 5.05849C16.2549 5.07462 16.2524 5.09312 16.2554 5.11088C17.0689 9.68333 13.3239 13.8333 8.33386 13.8333Z"
+                                        fill="#05DBF3"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M13.3337 3.33329H6.66699C4.82604 3.33329 3.33366 4.82568 3.33366 6.66663V13.3333C3.33366 15.1742 4.82604 16.6666 6.66699 16.6666H13.3337C15.1746 16.6666 16.667 15.1742 16.667 13.3333V6.66663C16.667 4.82568 15.1746 3.33329 13.3337 3.33329ZM6.66699 1.66663C3.90557 1.66663 1.66699 3.9052 1.66699 6.66663V13.3333C1.66699 16.0947 3.90557 18.3333 6.66699 18.3333H13.3337C16.0951 18.3333 18.3337 16.0947 18.3337 13.3333V6.66663C18.3337 3.9052 16.0951 1.66663 13.3337 1.66663H6.66699Z"
+                                        fill="#05DBF3"
+                                    />
+                                    <path
+                                        d="M14.1663 6.66667C14.6266 6.66667 14.9997 6.29357 14.9997 5.83333C14.9997 5.3731 14.6266 5 14.1663 5C13.7061 5 13.333 5.3731 13.333 5.83333C13.333 6.29357 13.7061 6.66667 14.1663 6.66667Z"
+                                        fill="#05DBF3"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M14.1663 10C14.1663 12.3012 12.3008 14.1667 9.99967 14.1667C7.69849 14.1667 5.83301 12.3012 5.83301 10C5.83301 7.69886 7.69849 5.83337 9.99967 5.83337C12.3008 5.83337 14.1663 7.69886 14.1663 10ZM12.4997 10C12.4997 11.3808 11.3804 12.5 9.99967 12.5C8.61892 12.5 7.49967 11.3808 7.49967 10C7.49967 8.61929 8.61892 7.50004 9.99967 7.50004C11.3804 7.50004 12.4997 8.61929 12.4997 10Z"
+                                        fill="#05DBF3"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <hr />
+                        <p class="profile__view-member">
+                            Member since Mar 15, 2024
+                        </p>
+                        <div class="profile__view-report">
+                            <svg
+                                width="8"
+                                height="7"
+                                viewBox="0 0 8 7"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M6 3.5L7.58504 1.65079C8.14104 1.00212 7.68013 9.15847e-08 6.82578 8.13966e-08L8.34742e-08 0L0 7L6.82578 7C7.68013 7 8.14104 5.99788 7.58504 5.34921L6 3.5ZM1 6L6.82578 6L4.68292 3.5L6.82578 1L1 1L1 6Z"
+                                    fill="#777E91"
+                                />
+                            </svg>
+                            <p>Report</p>
+                        </div>
+                    </div>
+                    <div class="profile__desc">
+                        <div class="profile__desc-top">
+                            <button class="profile__desc-top-introduce">
+                                Introduce
+                            </button>
+                            <button class="profile__desc-top-tour">
+                                Tour list
+                            </button>
+                            <button class="profile__desc-top-gallery">
+                                Gallery
+                            </button>
+                        </div>
+                        <div class="profile__desc-about">
+                            <h3 class="profile__desc-about-name">
+                                About Hanna
+                            </h3>
+                            <p class="profile__desc-about-desc">
+                                Hanna is good at traveling and reading books.
+                            </p>
+                            <div class="profile__desc-about-experiense">
+                                <span>Background & Experience</span>
+                                <span>Bank</span>
+                            </div>
+                            <div class="profile__desc-about-specialization">
+                                <span>Specialization</span>
+                                <span>Finance</span>
+                            </div>
+                            <div class="profile__desc-about-language">
+                                <span>Language Skills</span>
+                                <span>English, Russian</span>
+                            </div>
+                            <div class="profile__desc-about-interests">
+                                <span>Personal Interests</span>
+                                <span>Literature and Traveling</span>
+                            </div>
+                        </div>
+                        <div class="tour__list">
+                            <h3 class="tourlist">Tour list</h3>
+                            <div class="tourlist__card">
+                                <div class="tourlist__card-item">
+                                    <div class="tourlist__card-item-img">
+                                        <img
+                                            src="../assets/guillepozzi.png"
+                                            alt="guillepozzi"
+                                        />
+                                        <button>
+                                            <svg
+                                                width="20"
+                                                height="16"
+                                                viewBox="0 0 20 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M10.5777 3.76422C10.2552 4.07365 9.74609 4.07365 9.42365 3.76422L8.84665 3.2105C8.17129 2.56239 7.25893 2.16667 6.25065 2.16667C4.17958 2.16667 2.50065 3.8456 2.50065 5.91667C2.50065 7.90219 3.57547 9.54171 5.12712 10.8888C6.68008 12.237 8.53682 13.1312 9.64619 13.5876C9.87815 13.683 10.1232 13.683 10.3551 13.5876C11.4645 13.1312 13.3212 12.237 14.8742 10.8888C16.4258 9.54171 17.5006 7.90218 17.5006 5.91667C17.5006 3.8456 15.8217 2.16667 13.7506 2.16667C12.7424 2.16667 11.83 2.56239 11.1547 3.2105L10.5777 3.76422ZM10.0007 2.00798C9.02741 1.074 7.70606 0.5 6.25065 0.5C3.25911 0.5 0.833984 2.92512 0.833984 5.91667C0.833984 11.2235 6.6426 14.1542 9.01214 15.1289C9.65029 15.3914 10.351 15.3914 10.9892 15.1289C13.3587 14.1542 19.1673 11.2235 19.1673 5.91667C19.1673 2.92512 16.7422 0.5 13.7506 0.5C12.2952 0.5 10.9739 1.074 10.0007 2.00798Z"
+                                                    fill="#B1B5C4"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="tourlist__card-item-desc">
+                                        <p
+                                            class="tourlist__card-item-desc-name"
+                                        >
+                                            Tashkent
+                                        </p>
+                                        <hr />
+                                        <span>Tue, Jul 20 - Fri, Jul 23</span>
+                                    </div>
+                                </div>
+                                <div class="tourlist__card-item">
+                                    <div class="tourlist__card-item-img">
+                                        <img
+                                            src="../assets/guille-pozzi-sam.png"
+                                            alt="guille-pozzi-sam"
+                                        />
+                                        <button>
+                                            <svg
+                                                width="20"
+                                                height="16"
+                                                viewBox="0 0 20 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M10.0007 2.00798C9.02741 1.074 7.70606 0.5 6.25065 0.5C3.25911 0.5 0.833984 2.92512 0.833984 5.91667C0.833984 11.2235 6.6426 14.1542 9.01214 15.1289C9.65029 15.3914 10.351 15.3914 10.9892 15.1289C13.3587 14.1542 19.1673 11.2235 19.1673 5.91667C19.1673 2.92512 16.7422 0.5 13.7506 0.5C12.2952 0.5 10.9739 1.074 10.0007 2.00798Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="tourlist__card-item-desc">
+                                        <p
+                                            class="tourlist__card-item-desc-name"
+                                        >
+                                            Samarkand
+                                        </p>
+                                        <hr />
+                                        <span>Sat, Jul 24 - Thur, Jul 29</span>
+                                    </div>
+                                </div>
+                                <div class="tourlist__card-item">
+                                    <div class="tourlist__card-item-img">
+                                        <img
+                                            src="../assets/guille-pozzi-bukhara.png"
+                                            alt="guille-pozzi-bukhara"
+                                        />
+                                        <button>
+                                            <svg
+                                                width="20"
+                                                height="16"
+                                                viewBox="0 0 20 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M10.5777 3.76422C10.2552 4.07365 9.74609 4.07365 9.42365 3.76422L8.84665 3.2105C8.17129 2.56239 7.25893 2.16667 6.25065 2.16667C4.17958 2.16667 2.50065 3.8456 2.50065 5.91667C2.50065 7.90219 3.57547 9.54171 5.12712 10.8888C6.68008 12.237 8.53682 13.1312 9.64619 13.5876C9.87815 13.683 10.1232 13.683 10.3551 13.5876C11.4645 13.1312 13.3212 12.237 14.8742 10.8888C16.4258 9.54171 17.5006 7.90218 17.5006 5.91667C17.5006 3.8456 15.8217 2.16667 13.7506 2.16667C12.7424 2.16667 11.83 2.56239 11.1547 3.2105L10.5777 3.76422ZM10.0007 2.00798C9.02741 1.074 7.70606 0.5 6.25065 0.5C3.25911 0.5 0.833984 2.92512 0.833984 5.91667C0.833984 11.2235 6.6426 14.1542 9.01214 15.1289C9.65029 15.3914 10.351 15.3914 10.9892 15.1289C13.3587 14.1542 19.1673 11.2235 19.1673 5.91667C19.1673 2.92512 16.7422 0.5 13.7506 0.5C12.2952 0.5 10.9739 1.074 10.0007 2.00798Z"
+                                                    fill="#B1B5C4"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="tourlist__card-item-desc">
+                                        <p
+                                            class="tourlist__card-item-desc-name"
+                                        >
+                                            Bukhara
+                                        </p>
+                                        <hr />
+                                        <span>Fri, Jul 30 - Sat, Jul 31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer__box">
+                    <div class="logo__section footer__logo-section">
+                        <img src="../assets/logo.png" alt="logo" />
+                        <div class="logo__name">
+                            <p>UzTravel</p>
+                            <p>Guide</p>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p>Information</p>
+                        <a href="../index.html" target="_blank">About</a><br />
+                        <a href="../uztravel/tripplan.html" target="_blank">Plan to visit</a><br />
+                        <a href="./destination.html" target="_blank"
+                            >Destination</a
+                        ><br />
+                        <a href="./accomodation.html" target="_blank">Accomodation</a><br />
+                        <a href="../uztravel/index.html" target="_blank"
+                            >Food</a
+                        >
+                    </div>
+                    <div class="support">
+                        <p>Support</p>
+                        <a href="./support.html" target="_blank">Help</a><br />
+                        <a href="#">Privacy & Policy</a><br />
+                        <a href="./contactus.html" target="_blank">Contact</a>
+                    </div>
+                    <div class="create__profile">
+                        <p>CREATE YOUR PROFILE</p>
+                        <div class="send__email">
+                            <input type="text" placeholder="Enter your email" />
+                            <button>
+                                <svg
+                                    width="14"
+                                    height="9"
+                                    viewBox="0 0 14 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M9.09095 0.265207C9.49677 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49678 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L1 5.49997C0.447718 5.49997 3.05054e-06 5.05225 3.0279e-06 4.49997C3.00525e-06 3.94768 0.447718 3.49997 1 3.49997L10.716 3.49997L9.03443 1.67829C8.65983 1.27247 8.68513 0.639813 9.09095 0.265207Z"
+                                        fill="#FCFCFD"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <p class="reserved">All rights reserved</p>
+            </div>
+        </footer>
+
+        <script src="../general/general.js"></script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+.sidebar {
+  &__all {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+    background: var(--light-blue1, #05dbf3);
+    padding: 6px 16px;
+    border-radius: 100px;
+    max-width: 50px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  &__all:hover {
+    background: var(--light-blue1, #03c8de);
+    box-shadow: 0px 2px 10px 0px #00000040;
+  }
+  &__item {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    padding: 6px 16px;
+    color: #777e90;
+    margin-bottom: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  &__item:hover {
+    color: #5a5c60;
+  }
+}
+
+.region {
+  &__btns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    &1 {
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      color: #fcfcfd;
+      background: var(--light-blue1, #05dbf3);
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    &1:hover {
+      background: var(--light-blue1, #03c8de);
+      box-shadow: 0px 2px 10px 0px #00000040;
+    }
+    &2 {
+      font-family: DM Sans;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      padding: 6px 16px;
+      color: #777e90;
+      margin-bottom: 24px;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    &2:hover {
+      color: #5a5c60;
+    }
+  }
+}

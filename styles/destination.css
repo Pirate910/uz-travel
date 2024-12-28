@@ -1,0 +1,502 @@
+.best__places-section {
+    margin-top: 98px;
+    position: relative;
+}
+
+.bestfirstsvg{
+    position: absolute;
+    left: 500px;
+}
+
+.bestsecondsvg{
+    position: absolute;
+    top: 155px;
+    left: 658px;
+}
+
+.bestboldsvg{
+    position: absolute;
+    top: 124px;
+    right: 392px;
+}
+
+.best3svg{
+    position: absolute;
+    top: 342px;
+    left: 308px;
+}
+
+.best4svg{
+    position: absolute;
+    top: 442px;
+    left: 215px;
+}
+
+.best5svg{
+    position: absolute;
+    top: 400px;
+    right: 310px;
+}
+
+.best6svg{
+    position: absolute;
+    top: 466px;
+    right: 183px;
+}
+
+.bestsamolyot{
+    width: 390px;
+    height: 111px;
+    position: absolute;
+    bottom: -59px;
+    left: 420px;
+}
+
+.best__places {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.tashkent,
+.bukhara,
+.andijon {
+    position: relative;
+}
+
+.tashkent img,
+.bukhara img,
+.andijon img {
+    width: 255px;
+    height: 297px;
+    border-radius: 50px;
+    border: 7px solid #05dbf3;
+}
+
+.tashkent button,
+.bukhara button,
+.andijon button {
+    position: absolute;
+    bottom: 18px;
+    left: 10px;
+    right: 10px;
+    width: 235px;
+    height: 72px;
+    border-radius: 80px;
+    background: linear-gradient(
+        83.59deg,
+        #fcfcfd 36.52%,
+        rgba(252, 252, 253, 0.83) 98.8%
+    );
+    border: 1px solid #e6e8ec;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #23262f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.samarkand {
+    width: 256px;
+    height: 72px;
+    position: absolute;
+    top: 42px;
+    left: 450px;
+}
+
+.samarkand button {
+    width: 256px;
+    height: 72px;
+    border-radius: 80px;
+    border: 1px solid #e6e8ec;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #23262f;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background-color: transparent;
+}
+
+.khiva{
+    position: absolute;
+    top: 428px;
+    left: 245px;
+}
+
+.khiva button {
+    width: 199px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 80px;
+    border: 1px solid #e6e8ec;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #23262f;
+}
+
+.bukhara {
+    margin-left: auto;
+}
+
+.best__places-info {
+    margin-left: auto;
+}
+
+.best__places-info h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #23262f;
+}
+
+.best__places-info p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777e90;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.andijon {
+    margin-left: 600px;
+    margin-top: 60px;
+}
+
+.search__section {
+    margin-top: 200px;
+}
+
+.search {
+    height: 208px;
+    background-color: #033e8c;
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.search__top {
+    display: flex;
+    gap: 47px;
+}
+
+.places,
+.region {
+    width: 437px;
+    height: 72px;
+    background-color: transparent;
+    border: 1px solid #05dbf3;
+    border-radius: 16px;
+    outline: none;
+    text-align: center;
+    color: #fcfcfd;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.places::placeholder,
+.region::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #fcfcfd;
+}
+
+.search__top button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #05dbf3;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.search hr {
+    border-bottom: 1px solid #05dbf3;
+    margin-top: 40px;
+}
+
+.search__bottom-btn {
+    text-align: center;
+}
+
+.search__bottom-btn button {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #05dbf3;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.adventures__section {
+    margin-top: 80px;
+}
+
+.adventures p:first-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #777e90;
+}
+
+.adventures h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #23262f;
+    margin-top: 12px;
+}
+
+.adventures__desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: #777e90;
+    margin-top: 12px;
+}
+
+.adventures__top {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.adventures__top button {
+    cursor: pointer;
+}
+
+.adventures__top-btn.adventures__active {
+    width: 50px;
+    height: 28px;
+    background-color: #05dbf3;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+}
+
+.adventures__top-btn.adventures--active-btn{
+    background-color: #05dbf3;
+    padding: 16px;
+    border-radius: 100px;
+    color: #fcfcfd;
+}
+
+.adventures__top-btn {
+    border: none;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #777e90;
+}
+
+.adventures__nextprev-btn {
+    margin-left: auto;
+}
+
+.adventures__nextprev-btn button:first-child {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.adventures__nextprev-btn button:last-child {
+    width: 40px;
+    height: 40px;
+    background-color: #05dbf3;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+
+.adventures__cards {
+    display: flex;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    gap: 32px;
+    overflow: hidden;
+}
+
+.adventures__card-item {
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border-radius: 16px;
+    width: 256px;
+}
+
+.hide{
+    display: none;
+}
+
+.adventures__card-item.hide {
+    display: none;
+}
+
+.adventures__card-item-img {
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.adventures__card-item-img img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.adventures__card-item-img button:first-child {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    background-color: #fcfcfd;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.explore {
+    position: absolute;
+    top: 86px;
+    left: 80px;
+    width: 107px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 90px;
+    background-color: #05dbf3;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.adventures__card-item:hover .explore {
+    opacity: 1;
+}
+
+.adventures__card-item-desc {
+    margin-top: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.adventures__card-item-desc span {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #141416;
+}
+
+.adventures__card-item-desc .address {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #353945;
+    margin-top: 8px;
+}
+
+.adventures__card-item-desc hr {
+    background-color: #e6e8ec;
+    border-radius: 1px;
+    margin-top: 16px;
+}
+
+.adventures__card-item-desc p:last-child {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.adventures__card-item-desc p:last-child span {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.adventures__explore {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.adventures__explore button {
+    font-family: " DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    width: 152px;
+    height: 48px;
+    border: none;
+    border-radius: 90px;
+    background-color: #05dbf3;
+    color: #fcfcfd;
+    cursor: pointer;
+}
