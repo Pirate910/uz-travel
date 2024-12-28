@@ -1,0 +1,26 @@
+.food__hero {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  background: var(--dark-blue1, #033e8c);
+  border-radius: 16px;
+  &-item {
+    padding: 30px 18px 30px 18px;
+    h3 {
+      font-family: DM Sans;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      color: var(--Color, #fcfcfd);
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: var(--light-blue1, #05dbf3);
+      max-width: 544px;
+    }
+  }
+}

@@ -1,0 +1,432 @@
+.support__section {
+    height: 822px;
+}
+
+.supports {
+    position: relative;
+    padding-top: 322px;
+}
+
+.support__img {
+    position: absolute;
+    top: 193px;
+    right: 97px;
+    width: 372px;
+    height: 420px;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.support__samolyot {
+    position: absolute;
+    top: 100px;
+    right: -82px;
+    width: 577px;
+    height: 600px;
+}
+
+.support__bulut {
+    position: absolute;
+    top: 100px;
+    right: -114px;
+    width: 751px;
+    height: 662px;
+}
+
+.supports h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.supports p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777e90;
+    margin-top: 25px;
+}
+
+.support__search {
+    width: 400px;
+    height: 48px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.support__search input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e6e8ec;
+    border-radius: 90px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777e90;
+    padding-left: 16px;
+}
+
+.support__search input::-ms-clear {
+    display: none;
+}
+
+.support__search input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.support__search button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    outline: none;
+    border-radius: 100px;
+    background-color: #05dbf3;
+    border: none;
+    cursor: pointer;
+}
+
+.travel__tips-section {
+    height: 860px;
+    background-color: #033e8c;
+}
+
+.travel__tips {
+    padding-top: 100px;
+}
+
+.travel__tips h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #05dbf3;
+}
+
+.travel__tips-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.travel__tips-top p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfd;
+}
+
+.travel__tips-cards {
+    display: flex;
+    gap: 32px;
+}
+
+.travel__tips-top div .prev__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.travel__tips-top div .next__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: #05dbf3;
+    cursor: pointer;
+}
+
+.travel__tips-cards {
+    margin-top: 80px;
+}
+
+.travel__tips-card-item {
+    width: 352px;
+}
+
+.card__item-img {
+    position: relative;
+}
+
+.card__item-img img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    vertical-align: top;
+    border-radius: 16px;
+}
+
+.item__like {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    box-shadow: 0px 8px 16px -8px #0f0f0f1a;
+    background-color: #fcfcfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item__readmore {
+    position: absolute;
+    top: 136px;
+    right: 99px;
+    width: 131px;
+    height: 48px;
+    border-radius: 90px;
+    background-color: #05dbf3;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel__tips-card-item:hover .item__readmore {
+    opacity: 1;
+}
+
+.descr__name {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #05dbf3;
+}
+
+.descr__text {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fcfcfd;
+    margin-top: 8px;
+}
+
+.card__item-desc {
+    margin-top: 24px;
+}
+
+.qestions__section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+}
+
+.quention__box {
+    width: 815px;
+    background-color: #033e8c;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.question__start {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #fcfcfd;
+    text-align: center;
+}
+
+.question__name {
+    font-family: "DM Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #05dbf3;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.question__find {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfd;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.question__btns {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.question__faq {
+    width: 115px;
+    height: 28px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: #05dbf3;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+}
+
+.question__self {
+    width: 172px;
+    height: 28px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+}
+
+.question_emergensy {
+    width: 169px;
+    height: 28px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fcfcfd;
+}
+
+.hr1 {
+    border: 1px solid #e6e8ec;
+    margin-top: 80px;
+}
+
+.question__view {
+    margin-top: 32px;
+}
+
+.question__book-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question__book-top p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #05dbf3;
+}
+
+.question__book-top button {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.question__book-decr {
+    margin-top: 32px;
+}
+
+.question__book-decr p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfd;
+}
+
+.question__book-decr button {
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 90px;
+    background-color: #05dbf3;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    cursor: pointer;
+    color: #fcfcfd;
+    margin-top: 24px;
+}
+
+.hr2,
+.hr3,
+.hr4,
+.hr5 {
+    border: 1px solid #e6e8ec;
+    margin-top: 32px;
+}
+
+.create__account,
+.local__guides,
+.my__booking,
+.insurance {
+    margin-top: 32px;
+}
+
+.create__account-top,
+.local__guides-top,
+.my__booking-top,
+.insurance-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.create__account-top p,
+.local__guides-top p,
+.my__booking-top p,
+.insurance-top p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #05dbf3;
+}
+
+.create__account-top button,
+.local__guides-top button,
+.my__booking-top button,
+.insurance-top button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}

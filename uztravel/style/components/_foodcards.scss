@@ -1,0 +1,74 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.food__card {
+  max-width: 288px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 10px 0px #00000040;
+  img {
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  &-title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding-left: 22px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #e6e8ec;
+    h2 {
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      color: #23262f;
+    }
+    p {
+      //   max-width: 241px;
+      font-family: Poppins;
+      font-size: 14px;
+      //   text-align: left;
+      color: #777e90;
+    }
+  }
+  &-price {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    p {
+      //styleName: Caption;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      color: #777e90;
+    }
+  }
+}
+.food__cards {
+  display: flex;
+}
+
+.show__more-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 90px;
+  background: var(--light-blue1, #05dbf3);
+  color: #fcfcfd;
+  font-family: DM Sans;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 76px;
+  margin-top: 48px;
+}

@@ -1,0 +1,114 @@
+footer {
+  background: linear-gradient(90deg, #033e8c 0%, #05dbf3 100%);
+}
+.footer {
+  &__item {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #fcfcfd;
+    &-nav {
+      display: flex;
+      gap: 110px;
+    }
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    &-title {
+      //styleName: Button 1;
+      font-family: DM Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #fcfcfd;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      a {
+        //styleName: Caption (Bold);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: var(--Color, #fcfcfd);
+      }
+    }
+  }
+  &__navigations {
+    display: flex;
+    gap: 110px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__input {
+    padding: 14px 50px 14px 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    color: white;
+    // background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 90px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #fcfcfd;
+  }
+  &__input::placeholder {
+    color: #fcfcfd;
+  }
+}
+.email-input {
+  position: relative;
+  button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent button */
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover {
+    svg {
+      stroke: #fafafa;
+    }
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.footer__copyright {
+  padding: 24px 0;
+  //   position: absolute;
+  //   bottom: 0;
+  max-width: 111px;
+  margin: 0 auto;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--Color, #fcfcfd);
+}
