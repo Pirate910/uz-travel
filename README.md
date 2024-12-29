@@ -10,3 +10,7 @@
 ## Update 1.2: 
 ## 1: Corrected font families
 ## 2: Added filter in Domestic one
+
+## Update 1.3:
+## 1: Added Popup
+## 2: Fixed styles

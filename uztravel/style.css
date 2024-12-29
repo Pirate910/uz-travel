@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Englebert&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Englebert&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @media screen {
   .div {
     background-color: red;
@@ -15,6 +16,7 @@
 .container {
   max-width: 1120px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 * {
@@ -53,6 +55,22 @@ body {
           flex-direction: column;
 }
 
+.popup-close-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.popup-close-btn:active path {
+  fill: #23262F;
+}
+
+.popup-close-btn:hover path {
+  fill: #23262F;
+}
+
 .main {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -61,6 +79,200 @@ body {
 
 .hide {
   display: none;
+}
+
+.popup {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.popup-image-side {
+  width: 480px;
+  height: 576px;
+}
+.popup-image-side img {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #05DBF3;
+  border-radius: 20px;
+}
+
+.popup-close-btn:target .popup {
+  left: 100%;
+}
+
+.popup-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Poppins;
+  height: 100%;
+  width: 100%;
+  background: var(--Neutrals-8, #FCFCFD);
+  overflow: scroll;
+}
+
+.popup-info-side__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-bottom: 16px;
+}
+.popup-info-side__title h1 {
+  border-radius: 100px;
+  font-family: Poppins;
+  padding: 2px 12px;
+  background-color: #05DBF3;
+  color: #033E8C;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px; /* 166.667% */
+}
+
+.booking-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px 0;
+}
+.booking-details__title {
+  color: var(--Neutrals-2, #23262F);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px; /* 160% */
+}
+.booking-details__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px 0;
+}
+.booking-details__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 8px;
+}
+.booking-details__trip-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px 0;
+}
+.booking-details__trip-plan--ticket-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  border-radius: 16px;
+  background: var(--light-blue1, #05DBF3);
+}
+.booking-details__ticket-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px;
+}
+.booking-details__ticket-data {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 16px;
+  padding: 12px;
+}
+.booking-details__ticket-data--text-block p:first-child {
+  color: var(--dark-blue1, #033E8C);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.booking-details__ticket-data--text-block p:last-child {
+  color: var(--dark-blue1, #033E8C);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.booking-details__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px 0;
+}
+.booking-details-price-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.booking-details-price-list p:first-child {
+  color: var(--Neutrals-4, #777E90);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.booking-details__price-discount p:last-child {
+  color: var(--Neutrals-2, #23262F);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.booking-details__price-total p:last-child {
+  color: var(--Neutrals-2, #23262F);
+  text-align: right;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
 }
 
 @media (max-width: 400px) {
@@ -478,6 +690,9 @@ nav {
   line-height: 16px;
   margin-bottom: 76px;
   margin-top: 48px;
+}
+.show__more-btn:hover {
+  cursor: pointer;
 }
 
 .plan__search {
