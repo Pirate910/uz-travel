@@ -1,3 +1,8 @@
+.products-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 .products {
   display: flex;
   flex-wrap: wrap;

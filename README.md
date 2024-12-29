@@ -6,3 +6,7 @@
 
 ## Update 1.1:
 ## Changed incorrect title values
+
+## Update 1.2: 
+## 1: Corrected font families
+## 2: Added filter in Domestic one

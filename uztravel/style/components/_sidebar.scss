@@ -33,6 +33,12 @@
   }
 }
 
+.sidebar--active-btn{
+  color: #fff;
+  border-radius: 100px;
+  background-color: #03c8de;
+}
+
 .region {
   &__btns {
     display: flex;
