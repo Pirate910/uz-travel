@@ -126,19 +126,26 @@
 .accomodation__price-type {
     display: flex;
     gap: 32px;
+    flex: 1 1 auto;
 }
 
 .accomodation__price {
+    flex: 0 0 256px;
     width: 100%;
+}
+
+.accomodation__type{
+    flex: 1 1 auto;
 }
 
 .accomodation__card-item {
     display: flex;
+    align-items: center;
     gap: 16px;
     box-shadow: 0px 4px 10px 0px #00000040;
     border-radius: 16px;
     width: 400px;
-    height: 165px;
+    max-height: 164px;
 }
 
 .accomodation__card-item-img {
@@ -149,6 +156,8 @@
 }
 
 .accomodation__card-item-img img {
+    width: 192px;
+    height: 164px;
     border-radius: 16px;
     object-fit: cover;
     vertical-align: top;
@@ -675,33 +684,27 @@
     justify-content: space-between;
 }
 
-.cheapest__best button:first-child {
-    font-family: "DM San", sans-serif;
+.cheapest__best-btn{
+    border: none;
+    padding: 6px 12px;
+    color: var(--Neutrals-4, #777E90);
+    font-family: "DM Sans";
     font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
-    width: 99px;
-    height: 28px;
-    border-radius: 100px;
-    border: none;
-    outline: none;
-    background-color: #05dbf3;
-    color: #fcfcfd;
+    line-height: 16px; /* 114.286% */
+    background:none;
     cursor: pointer;
 }
 
-.cheapest__best button:last-child {
-    width: 63px;
-    height: 28px;
-    border: none;
-    outline: none;
-    font-family: "DM Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 16px;
-    color: #777e90;
-    background-color: transparent;
-    cursor: pointer;
+.cheapest__best-active-btn{
+    background-color: #05dbf3;
+    color: #fcfcfd;
+    border-radius: 100px;
+    background: var(--light-blue1, #05DBF3);
+}
+
+.hide{
+    display: none;
 }
 
 .select {

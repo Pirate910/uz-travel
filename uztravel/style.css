@@ -897,7 +897,6 @@ nav {
 .booking__card-btn-details {
   padding: 16px 24px;
   color: var(--Neutrals-8, #FCFCFD);
-  border: none;
   text-align: center;
   /* Button 1 */
   font-family: "DM Sans";
