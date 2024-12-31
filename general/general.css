@@ -26,6 +26,7 @@ header {
 
 a{
     text-decoration: none;
+    color: #000000;
 }
 
 .log {
@@ -254,7 +255,7 @@ footer {
     margin-bottom: 16px;
 }
 
-.footer__box img {
+.footer__box img:first-child {
     height: 72.6px;
 }
 

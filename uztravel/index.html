@@ -7,302 +7,33 @@
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="../general/general.css">.
         <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+        <script src="./js/foods.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="container">
-                <div class="log">
-                    <a class="logo__section" href="/">
-                        <img class="nav__logo-logo" src="../assets/logo.png" alt="logo" />
-                        <img
-                        class="nav__logo-slogan"
-                        src="../assets/Frame 1261154401.png"
-                        alt=""
-                        />
-                    </a>
-                    <div class="navigation__menu">
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="./tripplan.html"
-                                        target="_blank"
-                                        >Plan to trip</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="../pages/destination.html"
-                                        target="_blank"
-                                        >Destination</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="../pages/accomodation.html"
-                                        target="_blank"
-                                        >Accomodation</a
-                                    >
-                                </li>
-                                <li>
-                                    <a
-                                        href="./index.html"
-                                        target="_blank"
-                                        >Food</a
-                                    >
-                                </li>
-                            </ul>
-                            <div class="language__section">
-                                <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M8.00001 13.3333C10.9455 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9455 2.66659 8.00001 2.66659C5.05449 2.66659 2.66668 5.0544 2.66668 7.99992C2.66668 10.9454 5.05449 13.3333 8.00001 13.3333ZM8.00001 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00001 1.33325C4.31811 1.33325 1.33334 4.31802 1.33334 7.99992C1.33334 11.6818 4.31811 14.6666 8.00001 14.6666Z"
-                                        fill="#FCFCFD"
-                                    />
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M9.16444 12.1177C9.65691 11.1327 9.99999 9.67876 9.99999 7.99992C9.99999 6.32108 9.65691 4.8671 9.16444 3.88216C8.6321 2.81747 8.14336 2.66659 7.99999 2.66659C7.85662 2.66659 7.36788 2.81747 6.83554 3.88216C6.34307 4.8671 5.99999 6.32108 5.99999 7.99992C5.99999 9.67876 6.34307 11.1327 6.83554 12.1177C7.36788 13.1824 7.85662 13.3333 7.99999 13.3333C8.14336 13.3333 8.6321 13.1824 9.16444 12.1177ZM7.99999 14.6666C9.84094 14.6666 11.3333 11.6818 11.3333 7.99992C11.3333 4.31802 9.84094 1.33325 7.99999 1.33325C6.15904 1.33325 4.66666 4.31802 4.66666 7.99992C4.66666 11.6818 6.15904 14.6666 7.99999 14.6666Z"
-                                        fill="#FCFCFD"
-                                    />
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M14.6338 8.66659C14.6555 8.44731 14.6667 8.22492 14.6667 7.99992C14.6667 7.77492 14.6555 7.55252 14.6338 7.33325H1.36626C1.34449 7.55252 1.33334 7.77492 1.33334 7.99992C1.33334 8.22492 1.34449 8.44731 1.36626 8.66659H14.6338Z"
-                                        fill="#FCFCFD"
-                                    />
-                                </svg>
-                                <select>
-                                    <option value="eng">English</option>
-                                    <option value="rus">Русский</option>
-                                </select>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="wishlist">
-                        <a href="../pages/wishlist.html" target="_blank"
-                            >Wishlist</a
-                        >
-                        <div class="notification__bell">
-                            <svg
-                                width="18"
-                                height="19"
-                                viewBox="0 0 18 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M18 15.0233C18 15.5113 17.6043 15.907 17.1163 15.907H0.88372C0.395655 15.907 0 15.5113 0 15.0233C0 14.5352 0.395656 14.1395 0.883721 14.1395H0.9V7.98088C0.9 3.57288 4.527 0 9 0C13.473 0 17.1 3.57288 17.1 7.98088V14.1395H17.1163C17.6043 14.1395 18 14.5352 18 15.0233ZM2.7 14.1395H15.3V7.98088C15.3 4.5494 12.4794 1.76744 9 1.76744C5.5206 1.76744 2.7 4.5494 2.7 7.98088V14.1395ZM6.97604 17.7558C6.73121 17.2608 7.19772 16.7907 7.75 16.7907H10.25C10.8023 16.7907 11.2688 17.2608 11.024 17.7558C10.9155 17.9751 10.7699 18.1773 10.591 18.3529C10.169 18.7672 9.59674 19 9 19C8.40326 19 7.83097 18.7672 7.40901 18.3529C7.23013 18.1773 7.08449 17.9751 6.97604 17.7558Z"
-                                    fill="#033E8C"
-                                />
-                            </svg>
-                        </div>
-                        <div class="profile__img">
-                            <a href="../pages/profile.html"><img src="../assets/profile__img.png" alt="img" /></a>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <section class="introduction">
+        <div class="wrapper">
+            <header class="header">
                 <div class="container">
-                    <div class="food__hero">
-                        <div class="food__hero-item">
-                            <h3>Food</h3>
-                            <p>
-                                Find restaurants and cafés near you or plan your
-                                next dining adventure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="container">
-                <div class="region">
-                    <div class="region__btns">
-                        <button class="region__btns1">Domestic</button>
-                        <button class="region__btns2">Foreign</button>
-                    </div>
-                </div>
-                <div class="food__cards">
-                    <div class="sidebar">
-                        <ul>
-                            <li class="sidebar__all">All</li>
-                            <li class="sidebar__item">Traditional cuisine</li>
-                            <li class="sidebar__item">Teahouses (Chaykhana)</li>
-                            <li class="sidebar__item">Restaurants</li>
-                            <li class="sidebar__item">Cafes</li>
-                            <li class="sidebar__item">Street Food</li>
-                        </ul>
-                    </div>
-                    <div class="products">
-                        <div class="food__card">
+                    <div class="log">
+                        <a class="logo__section" href="/">
+                            <img class="nav__logo-logo" src="../assets/logo.png" alt="logo" />
                             <img
-                                src="./assets/images/foodcatds/oshmarkazi.png"
-                                alt=""
-                            />
-                            <div class="food__card-title">
-                                <h2>Plov Center (Osh Markazi)</h2>
-                                <p>1 Sheikh Zayniddin Street, Tashkent</p>
-                            </div>
-                            <div class="food__card-price">
-                                <p>Authentic Uzbek plov</p>
-                                <p>$5–$10 per person</p>
-                            </div>
-                        </div>
-                        <div class="food__card">
-                            <img
-                                src="./assets/images/foodcatds/afsona.png"
-                                alt=""
-                            />
-                            <div class="food__card-title">
-                                <h2>Afsona</h2>
-                                <p>31B Afrosiyob Street, Tashkent</p>
-                            </div>
-                            <div class="food__card-price">
-                                <p>Modern Uzbek cuisine</p>
-                                <p>$15–$30 per person</p>
-                            </div>
-                        </div>
-                        <div class="food__card">
-                            <img
-                                src="./assets/images/foodcatds/caravon.png"
-                                alt=""
-                            />
-                            <div class="food__card-title">
-                                <h2>Caravan Restaurant</h2>
-                                <p>22 Abdullah Kahhar Street, Tashkent</p>
-                            </div>
-                            <div class="food__card-price">
-                                <p>Traditional Uzbek dishes</p>
-                                <p>$10–$20 per person</p>
-                            </div>
-                        </div>
-                        <div class="food__card">
-                            <img
-                                src="./assets/images/foodcatds/samarqandres.png"
-                                alt=""
-                            />
-                            <div class="food__card-title">
-                                <h2>Samarkand Restaurant</h2>
-                                <p>15 Gagarin Street, Samarkand</p>
-                            </div>
-                            <div class="food__card-price">
-                                <p>Uzbek dishes</p>
-                                <p>$8–$15 per person</p>
-                            </div>
-                        </div>
-                        <div class="food__card">
-                            <img
-                                src="./assets/images/foodcatds/salomchoyxona.png"
-                                alt=""
-                            />
-                            <div class="food__card-title">
-                                <h2>Chaykhana Salom</h2>
-                                <p>13 Bakhauddin Ni Street, Bukharas</p>
-                            </div>
-                            <div class="food__card-price">
-                                <p>Green tea, somsa, and soups</p>
-                                <p>$5–$10 per person</p>
-                            </div>
-                        </div>
-                        <div class="food__card">
-                            <img
-                                src="./assets/images/foodcatds/breadly.png"
-                                alt=""
-                            />
-                            <div class="food__card-title">
-                                <h2>Breadly Café</h2>
-                                <p>10 Amir Temur Avenue, Tashkent</p>
-                            </div>
-                            <div class="food__card-price">
-                                <p>Artisanal coffee</p>
-                                <p>$7–$15 per person</p>
-                            </div>
-                        </div>
-                        <button class="show__more-btn">
-                            <svg
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M8.00016 1.33337C7.63197 1.33337 7.3335 1.63185 7.3335 2.00004V4.00004C7.3335 4.36823 7.63197 4.66671 8.00016 4.66671C8.36835 4.66671 8.66683 4.36823 8.66683 4.00004V2.00004C8.66683 1.63185 8.36835 1.33337 8.00016 1.33337Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M8.00016 11.3334C7.63197 11.3334 7.3335 11.6319 7.3335 12V14C7.3335 14.3682 7.63197 14.6667 8.00016 14.6667C8.36835 14.6667 8.66683 14.3682 8.66683 14V12C8.66683 11.6319 8.36835 11.3334 8.00016 11.3334Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M14.0002 7.33337C14.3684 7.33337 14.6668 7.63185 14.6668 8.00004C14.6668 8.36823 14.3684 8.66671 14.0002 8.66671H12.0002C11.632 8.66671 11.3335 8.36823 11.3335 8.00004C11.3335 7.63185 11.632 7.33337 12.0002 7.33337H14.0002Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M4.66683 8.00004C4.66683 7.63185 4.36835 7.33337 4.00016 7.33337H2.00016C1.63197 7.33337 1.3335 7.63185 1.3335 8.00004C1.3335 8.36823 1.63197 8.66671 2.00016 8.66671H4.00016C4.36835 8.66671 4.66683 8.36823 4.66683 8.00004Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M11.7714 3.28606C12.0318 3.02571 12.4539 3.02571 12.7142 3.28606C12.9746 3.54641 12.9746 3.96852 12.7142 4.22887L11.3 5.64308C11.0397 5.90343 10.6176 5.90343 10.3572 5.64308C10.0969 5.38273 10.0969 4.96062 10.3572 4.70027L11.7714 3.28606Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M5.64312 10.357C5.38277 10.0967 4.96066 10.0967 4.70031 10.357L3.28609 11.7712C3.02574 12.0316 3.02574 12.4537 3.28609 12.714C3.54644 12.9744 3.96855 12.9744 4.2289 12.714L5.64312 11.2998C5.90347 11.0395 5.90347 10.6174 5.64312 10.357Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M12.7142 11.7713C12.9746 12.0317 12.9746 12.4538 12.7142 12.7141C12.4539 12.9745 12.0318 12.9745 11.7714 12.7141L10.3572 11.2999C10.0969 11.0396 10.0969 10.6174 10.3572 10.3571C10.6176 10.0967 11.0397 10.0967 11.3 10.3571L12.7142 11.7713Z"
-                                    fill="#FCFCFD"
-                                />
-                                <path
-                                    d="M5.64318 5.64299C5.90353 5.38265 5.90353 4.96054 5.64318 4.70019L4.22897 3.28597C3.96862 3.02562 3.54651 3.02562 3.28616 3.28597C3.02581 3.54632 3.02581 3.96843 3.28616 4.22878L4.70037 5.64299C4.96072 5.90334 5.38283 5.90334 5.64318 5.64299Z"
-                                    fill="#FCFCFD"
-                                />
-                            </svg>
-                            Explore more
-                        </button>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <div class="footer__item">
-                    <div class="nav__logo">
-                        <img
-                            class="nav__logo-logo"
-                            src="./assets/images/Logo.png"
-                            alt=""
-                        />
-                        <img
                             class="nav__logo-slogan"
-                            src="./assets/images/Frame 1261154401.png"
+                            src="../assets/Frame 1261154401.png"
                             alt=""
-                        />
-                    </div>
-                    <div class="footer__item-nav">
-                        <div class="footer__navigations">
-                            <div class="footer__nav">
-                                <p class="footer__nav-title">Information</p>
+                            />
+                        </a>
+                        <div class="navigation__menu">
+                            <nav>
                                 <ul>
                                     <li>
-                                        <a href="../index.html" target="_blank">About</a>
+                                        <a href="#">About</a>
                                     </li>
                                     <li>
-                                        <a href="./tripplan.html" target="_blank">Plan to visit</a>
+                                        <a
+                                            href="./tripplan.html"
+                                            target="_blank"
+                                            >Plan to trip</a
+                                        >
                                     </li>
                                     <li>
                                         <a
@@ -314,40 +45,279 @@
                                     <li>
                                         <a
                                             href="../pages/accomodation.html"
-                                            target=""
+                                            target="_blank"
                                             >Accomodation</a
                                         >
                                     </li>
                                     <li>
-                                        <a href="#">Food</a>
+                                        <a
+                                            href="./index.html"
+                                            target="_blank"
+                                            >Food</a
+                                        >
                                     </li>
                                 </ul>
+                                <div class="language__section">
+                                    <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M8.00001 13.3333C10.9455 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9455 2.66659 8.00001 2.66659C5.05449 2.66659 2.66668 5.0544 2.66668 7.99992C2.66668 10.9454 5.05449 13.3333 8.00001 13.3333ZM8.00001 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00001 1.33325C4.31811 1.33325 1.33334 4.31802 1.33334 7.99992C1.33334 11.6818 4.31811 14.6666 8.00001 14.6666Z"
+                                            fill="#FCFCFD"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M9.16444 12.1177C9.65691 11.1327 9.99999 9.67876 9.99999 7.99992C9.99999 6.32108 9.65691 4.8671 9.16444 3.88216C8.6321 2.81747 8.14336 2.66659 7.99999 2.66659C7.85662 2.66659 7.36788 2.81747 6.83554 3.88216C6.34307 4.8671 5.99999 6.32108 5.99999 7.99992C5.99999 9.67876 6.34307 11.1327 6.83554 12.1177C7.36788 13.1824 7.85662 13.3333 7.99999 13.3333C8.14336 13.3333 8.6321 13.1824 9.16444 12.1177ZM7.99999 14.6666C9.84094 14.6666 11.3333 11.6818 11.3333 7.99992C11.3333 4.31802 9.84094 1.33325 7.99999 1.33325C6.15904 1.33325 4.66666 4.31802 4.66666 7.99992C4.66666 11.6818 6.15904 14.6666 7.99999 14.6666Z"
+                                            fill="#FCFCFD"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M14.6338 8.66659C14.6555 8.44731 14.6667 8.22492 14.6667 7.99992C14.6667 7.77492 14.6555 7.55252 14.6338 7.33325H1.36626C1.34449 7.55252 1.33334 7.77492 1.33334 7.99992C1.33334 8.22492 1.34449 8.44731 1.36626 8.66659H14.6338Z"
+                                            fill="#FCFCFD"
+                                        />
+                                    </svg>
+                                    <select>
+                                        <option value="eng">English</option>
+                                        <option value="rus">Русский</option>
+                                    </select>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="wishlist">
+                            <a href="../pages/wishlist.html" target="_blank"
+                                >Wishlist</a
+                            >
+                            <div class="notification__bell">
+                                <svg
+                                    width="18"
+                                    height="19"
+                                    viewBox="0 0 18 19"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18 15.0233C18 15.5113 17.6043 15.907 17.1163 15.907H0.88372C0.395655 15.907 0 15.5113 0 15.0233C0 14.5352 0.395656 14.1395 0.883721 14.1395H0.9V7.98088C0.9 3.57288 4.527 0 9 0C13.473 0 17.1 3.57288 17.1 7.98088V14.1395H17.1163C17.6043 14.1395 18 14.5352 18 15.0233ZM2.7 14.1395H15.3V7.98088C15.3 4.5494 12.4794 1.76744 9 1.76744C5.5206 1.76744 2.7 4.5494 2.7 7.98088V14.1395ZM6.97604 17.7558C6.73121 17.2608 7.19772 16.7907 7.75 16.7907H10.25C10.8023 16.7907 11.2688 17.2608 11.024 17.7558C10.9155 17.9751 10.7699 18.1773 10.591 18.3529C10.169 18.7672 9.59674 19 9 19C8.40326 19 7.83097 18.7672 7.40901 18.3529C7.23013 18.1773 7.08449 17.9751 6.97604 17.7558Z"
+                                        fill="#033E8C"
+                                    />
+                                </svg>
                             </div>
-                            <div class="footer__nav">
-                                <p class="footer__nav-title">Support</p>
-                                <ul>
-                                    <li>
-                                        <a href="../pages/support.html" target="_blank">Help</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Privacy & Policy</a>
-                                    </li>
-                                    <li>
-                                        <a href="../pages/contactus.html" target="_blank">Contact us</a>
-                                    </li>
-                                </ul>
+                            <div class="profile__img">
+                                <a href="../pages/profile.html"><img src="../assets/profile__img.png" alt="img" /></a>  
                             </div>
                         </div>
-                        <div class="footer__form">
-                            <label class="footer__nav-title"
-                                >Create your profile</label
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="introduction">
+                    <div class="container">
+                        <div class="food__hero">
+                            <div class="food__hero-item">
+                                <h3>Food</h3>
+                                <p>
+                                    Find restaurants and cafés near you or plan your
+                                    next dining adventure.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="container">
+                    <div class="region">
+                        <div class="region__btns">
+                            <button class="region__btns1">Domestic</button>
+                            <button class="region__btns2">Foreign</button>
+                        </div>
+                    </div>
+                    <div class="food__cards">
+                        <div class="sidebar">
+                            <ul class="sidebar-btns">
+                                <li class="sidebar__item sidebar--active-btn" data-filter="all">All</li>
+                                <li class="sidebar__item" data-filter="traditional">Traditional cuisine</li>
+                                <li class="sidebar__item" data-filter="teahouse">Teahouses (Chaykhana)</li>
+                                <li class="sidebar__item" data-filter="restaurants">Restaurants</li>
+                                <li class="sidebar__item" data-filter="cafes">Cafes</li>
+                                <li class="sidebar__item" data-filter="street">Street Food</li>
+                            </ul>
+                        </div>
+                        <div class="products-wrapper">
+                            <div class="products">
+                                <div class="food__card" data-filter="traditional">
+                                    <img
+                                        src="./assets/images/foodcatds/oshmarkazi.png"
+                                        alt=""
+                                    />
+                                    <div class="food__card-title">
+                                        <h2>Plov Center (Osh Markazi)</h2>
+                                        <p>1 Sheikh Zayniddin Street, Tashkent</p>
+                                    </div>
+                                    <div class="food__card-price">
+                                        <p>Authentic Uzbek plov</p>
+                                        <p>$5–$10 per person</p>
+                                    </div>
+                                </div>
+                                <div class="food__card" data-filter="restaurants">
+                                    <img
+                                        src="./assets/images/foodcatds/afsona.png"
+                                        alt=""
+                                    />
+                                    <div class="food__card-title">
+                                        <h2>Afsona</h2>
+                                        <p>31B Afrosiyob Street, Tashkent</p>
+                                    </div>
+                                    <div class="food__card-price">
+                                        <p>Modern Uzbek cuisine</p>
+                                        <p>$15–$30 per person</p>
+                                    </div>
+                                </div>
+                                <div class="food__card" data-filter="restaurants">
+                                    <img
+                                        src="./assets/images/foodcatds/caravon.png"
+                                        alt=""
+                                    />
+                                    <div class="food__card-title">
+                                        <h2>Caravan Restaurant</h2>
+                                        <p>22 Abdullah Kahhar Street, Tashkent</p>
+                                    </div>
+                                    <div class="food__card-price">
+                                        <p>Traditional Uzbek dishes</p>
+                                        <p>$10–$20 per person</p>
+                                    </div>
+                                </div>
+                                <div class="food__card" data-filter="restaurants">
+                                    <img
+                                        src="./assets/images/foodcatds/samarqandres.png"
+                                        alt=""
+                                    />
+                                    <div class="food__card-title">
+                                        <h2>Samarkand Restaurant</h2>
+                                        <p>15 Gagarin Street, Samarkand</p>
+                                    </div>
+                                    <div class="food__card-price">
+                                        <p>Uzbek dishes</p>
+                                        <p>$8–$15 per person</p>
+                                    </div>
+                                </div>
+                                <div class="food__card" data-filter="teahouse">
+                                    <img
+                                        src="./assets/images/foodcatds/salomchoyxona.png"
+                                        alt=""
+                                    />
+                                    <div class="food__card-title">
+                                        <h2>Chaykhana Salom</h2>
+                                        <p>13 Bakhauddin Ni Street, Bukharas</p>
+                                    </div>
+                                    <div class="food__card-price">
+                                        <p>Green tea, somsa, and soups</p>
+                                        <p>$5–$10 per person</p>
+                                    </div>
+                                </div>
+                                <div class="food__card" data-filter="cafes">
+                                    <img
+                                        src="./assets/images/foodcatds/breadly.png"
+                                        alt=""
+                                    />
+                                    <div class="food__card-title">
+                                        <h2>Breadly Café</h2>
+                                        <p>10 Amir Temur Avenue, Tashkent</p>
+                                    </div>
+                                    <div class="food__card-price">
+                                        <p>Artisanal coffee</p>
+                                        <p>$7–$15 per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="./../index.html"><button class="show__more-btn">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M8.00016 1.33337C7.63197 1.33337 7.3335 1.63185 7.3335 2.00004V4.00004C7.3335 4.36823 7.63197 4.66671 8.00016 4.66671C8.36835 4.66671 8.66683 4.36823 8.66683 4.00004V2.00004C8.66683 1.63185 8.36835 1.33337 8.00016 1.33337Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M8.00016 11.3334C7.63197 11.3334 7.3335 11.6319 7.3335 12V14C7.3335 14.3682 7.63197 14.6667 8.00016 14.6667C8.36835 14.6667 8.66683 14.3682 8.66683 14V12C8.66683 11.6319 8.36835 11.3334 8.00016 11.3334Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M14.0002 7.33337C14.3684 7.33337 14.6668 7.63185 14.6668 8.00004C14.6668 8.36823 14.3684 8.66671 14.0002 8.66671H12.0002C11.632 8.66671 11.3335 8.36823 11.3335 8.00004C11.3335 7.63185 11.632 7.33337 12.0002 7.33337H14.0002Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M4.66683 8.00004C4.66683 7.63185 4.36835 7.33337 4.00016 7.33337H2.00016C1.63197 7.33337 1.3335 7.63185 1.3335 8.00004C1.3335 8.36823 1.63197 8.66671 2.00016 8.66671H4.00016C4.36835 8.66671 4.66683 8.36823 4.66683 8.00004Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M11.7714 3.28606C12.0318 3.02571 12.4539 3.02571 12.7142 3.28606C12.9746 3.54641 12.9746 3.96852 12.7142 4.22887L11.3 5.64308C11.0397 5.90343 10.6176 5.90343 10.3572 5.64308C10.0969 5.38273 10.0969 4.96062 10.3572 4.70027L11.7714 3.28606Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M5.64312 10.357C5.38277 10.0967 4.96066 10.0967 4.70031 10.357L3.28609 11.7712C3.02574 12.0316 3.02574 12.4537 3.28609 12.714C3.54644 12.9744 3.96855 12.9744 4.2289 12.714L5.64312 11.2998C5.90347 11.0395 5.90347 10.6174 5.64312 10.357Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M12.7142 11.7713C12.9746 12.0317 12.9746 12.4538 12.7142 12.7141C12.4539 12.9745 12.0318 12.9745 11.7714 12.7141L10.3572 11.2999C10.0969 11.0396 10.0969 10.6174 10.3572 10.3571C10.6176 10.0967 11.0397 10.0967 11.3 10.3571L12.7142 11.7713Z"
+                                        fill="#FCFCFD"
+                                    />
+                                    <path
+                                        d="M5.64318 5.64299C5.90353 5.38265 5.90353 4.96054 5.64318 4.70019L4.22897 3.28597C3.96862 3.02562 3.54651 3.02562 3.28616 3.28597C3.02581 3.54632 3.02581 3.96843 3.28616 4.22878L4.70037 5.64299C4.96072 5.90334 5.38283 5.90334 5.64318 5.64299Z"
+                                        fill="#FCFCFD"
+                                    />
+                                </svg>
+                                Explore more
+                            </button></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container">
+                    <div class="footer__box">
+                        <div class="logo__section footer__logo">
+                            <img src="../assets/logo.png" alt="logo" />
+                            <img
+                            class="nav__logo-slogan"
+                            src="../assets/Frame 1261154401.png"
+                            alt=""
+                            />
+                        </div>
+                        <div class="information">
+                            <p>Information</p>
+                            <a href="#">About</a><br />
+                            <a href="#">Plan to visit</a><br />
+                            <a href="../pages/destination.html" target="_blank"
+                                >Destination</a
+                            ><br />
+                            <a href="../pages/accomodation.html" target="_blank"
+                                >Accomodation</a
+                            ><br />
+                            <a href="../uztravel/index.html" target="_blank">Food</a>
+                        </div>
+                        <div class="support">
+                            <p>Support</p>
+                            <a href="../pages/support.html" target="_blank">Help</a
+                            ><br />
+                            <a href="#">Privacy & Policy</a><br />
+                            <a href="../pages/contactus.html" target="_blank"
+                                >Contact</a
                             >
-                            <div class="email-input">
-                                <input
-                                    class="footer__input"
-                                    type="text"
-                                    placeholder="Enter your email"
-                                />
+                        </div>
+                        <div class="create__profile">
+                            <p>CREATE YOUR PROFILE</p>
+                            <div class="send__email">
+                                <input type="text" placeholder="Enter your email" />
                                 <button>
                                     <svg
                                         width="14"
@@ -359,7 +329,7 @@
                                         <path
                                             fill-rule="evenodd"
                                             clip-rule="evenodd"
-                                            d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z"
+                                            d="M9.09095 0.265207C9.49677 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49678 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L1 5.49997C0.447718 5.49997 3.05054e-06 5.05225 3.0279e-06 4.49997C3.00525e-06 3.94768 0.447718 3.49997 1 3.49997L10.716 3.49997L9.03443 1.67829C8.65983 1.27247 8.68513 0.639813 9.09095 0.265207Z"
                                             fill="#FCFCFD"
                                         />
                                     </svg>
@@ -367,10 +337,11 @@
                             </div>
                         </div>
                     </div>
+                    <hr />
+                    <p class="reserved">All rights reserved</p>
                 </div>
-                <p class="footer__copyright">All rights reserved</p>
-            </div>
-        </footer>
+            </footer>
+        </div>
         <script src="./script.js"></script>
     </body>
 </html>

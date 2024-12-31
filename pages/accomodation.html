@@ -12,6 +12,8 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet"
         />
+        <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+        <script src="../js/accomodation-filter.js" defer></script>
     </head>
     <body>
         <header>
@@ -210,17 +212,17 @@
                             <input
                                 type="range"
                                 min="100"
-                                max="5000"
-                                value="1500"
+                                max="1000"
+                                value="1000"
                                 class="range__slider"
                                 id="slider"
                             />
                             <div class="slider__value" id="slider__value">
-                                $1500
+                                $500
                             </div>
                             <div class="slider__lables">
                                 <span>$100</span>
-                                <span>$5000</span>
+                                <span>$1000</span>
                             </div>
                         </div>
                         <hr class="first__hr" />
@@ -233,46 +235,13 @@
                                 </div>
                                 <div class="first__inp-btn">
                                     <input type="number" placeholder="3" />
-                                    <button>
-                                        <svg
-                                            width="10"
-                                            height="6"
-                                            viewBox="0 0 10 6"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M9.20711 0.792893C8.81658 0.402369 8.18342 0.402369 7.79289 0.792893L5 3.58579L2.20711 0.792893C1.81658 0.402369 1.18342 0.402369 0.792894 0.792893C0.402369 1.18342 0.402369 1.81658 0.792894 2.20711L4.29289 5.70711C4.68342 6.09763 5.31658 6.09763 5.70711 5.70711L9.20711 2.20711C9.59763 1.81658 9.59763 1.18342 9.20711 0.792893Z"
-                                                fill="#FCFCFD"
-                                            />
-                                        </svg>
-                                    </button>
                                 </div>
                                 <div class="start__date">
                                     <p class="date__start">START DATE</p>
                                     <div class="start__date-inp-btn">
                                         <input
-                                            type="text"
-                                            placeholder="28/12/2024"
+                                            type="date"
                                         />
-                                        <button>
-                                            <svg
-                                                width="10"
-                                                height="6"
-                                                viewBox="0 0 10 6"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    clip-rule="evenodd"
-                                                    d="M9.20711 0.792893C8.81658 0.402369 8.18342 0.402369 7.79289 0.792893L5 3.58579L2.20711 0.792893C1.81658 0.402369 1.18342 0.402369 0.792894 0.792893C0.402369 1.18342 0.402369 1.81658 0.792894 2.20711L4.29289 5.70711C4.68342 6.09763 5.31658 6.09763 5.70711 5.70711L9.20711 2.20711C9.59763 1.81658 9.59763 1.18342 9.20711 0.792893Z"
-                                                    fill="#FCFCFD"
-                                                />
-                                            </svg>
-                                        </button>
                                     </div>
                                 </div>
                                 <div class="end__date">
@@ -309,7 +278,7 @@
                                 <div class="stars">
                                     <p>STARS</p>
                                     <div class="first__checkbox">
-                                        <input type="checkbox" />
+                                        <input id="5" type="checkbox" />
                                         <div class="stars__svg">
                                             <svg
                                                 width="24"
@@ -384,7 +353,7 @@
                                         </div>
                                     </div>
                                     <div class="second__checkbox">
-                                        <input type="checkbox" />
+                                        <input id="4" type="checkbox" />
                                         <div class="stars__svg">
                                             <svg
                                                 width="22"
@@ -459,7 +428,7 @@
                                         </div>
                                     </div>
                                     <div class="last__checkbox">
-                                        <input type="checkbox" />
+                                        <input id="3" type="checkbox" />
                                         <div class="stars__svg">
                                             <svg
                                                 width="22"
@@ -544,8 +513,9 @@
                     <div class="accomodation__type">
                         <div class="accomodation__type-btns">
                             <div class="cheapest__best">
-                                <button>Cheapest</button>
-                                <button>Best</button>
+                                <button class="cheapest__best-btn cheapest__best-active-btn" data-filter="all">All</button>
+                                <button class="cheapest__best-btn" data-filter="cheapest">Cheapest</button>
+                                <button class="cheapest__best-btn" data-filter="best">Best</button>
                             </div>
                             <div class="select">
                                 <select name="" id="accomodation__type-select">
@@ -578,7 +548,7 @@
                             </div>
                         </div>
                         <div class="accomodation_hotels-cards">
-                            <div class="accomodation__card-item">
+                            <div class="accomodation__card-item" data-filter="cheapest">
                                 <div class="accomodation__card-item-img">
                                     <img
                                         src="../assets/hyatt.png"
@@ -607,7 +577,7 @@
                                     >
                                 </div>
                                 <div class="accomodation__card-item-desc">
-                                    <p>Hyatt Regency</p>
+                                    <p class="accomodation__card-item-title">Hyatt Regency</p>
                                     <p class="acco__item-address">
                                         Navoi Street, Tashkent
                                     </p>
@@ -630,11 +600,12 @@
                                                 fill="#05DBF3"
                                             />
                                         </svg>
-                                        5</span
+                                        <p data-filter="5">5</p>
+                                        </span
                                     >
                                 </div>
                             </div>
-                            <div class="accomodation__card-item">
+                            <div class="accomodation__card-item" data-filter="cheapest">
                                 <div class="accomodation__card-item-img">
                                     <img
                                         src="../assets/wyndham.png"
@@ -663,7 +634,7 @@
                                     >
                                 </div>
                                 <div class="accomodation__card-item-desc">
-                                    <p>Wyndham Tashkent</p>
+                                    <p class="accomodation__card-item-title">Wyndham Tashkent</p>
                                     <p class="acco__item-address">
                                         Amir Temur Str C-4, Tashkent
                                     </p>
@@ -686,11 +657,12 @@
                                                 fill="#05DBF3"
                                             />
                                         </svg>
-                                        5</span
+                                        <p data-filter="5">5</p>
+                                        </span
                                     >
                                 </div>
                             </div>
-                            <div class="accomodation__card-item">
+                            <div class="accomodation__card-item" data-filter="best">
                                 <div class="accomodation__card-item-img">
                                     <img
                                         src="../assets/international.png"
@@ -719,7 +691,7 @@
                                     >
                                 </div>
                                 <div class="accomodation__card-item-desc">
-                                    <p>International Hotel</p>
+                                    <p class="accomodation__card-item-title">International Hotel</p>
                                     <p class="acco__item-address">
                                         Amir Temur Street 107A
                                     </p>
@@ -742,11 +714,12 @@
                                                 fill="#05DBF3"
                                             />
                                         </svg>
-                                        5</span
+                                        <p data-filter="5">5</p>
+                                        </span
                                     >
                                 </div>
                             </div>
-                            <div class="accomodation__card-item">
+                            <div class="accomodation__card-item" data-filter="best">
                                 <div class="accomodation__card-item-img">
                                     <img
                                         src="../assets/hiltonhotel.png"
@@ -775,7 +748,7 @@
                                     >
                                 </div>
                                 <div class="accomodation__card-item-desc">
-                                    <p>Hilton Tashkent City</p>
+                                    <p class="accomodation__card-item-title">Hilton Tashkent City</p>
                                     <p class="acco__item-address">
                                         Islam K. Str 2, Block 5, Tashkent
                                     </p>
@@ -798,11 +771,12 @@
                                                 fill="#05DBF3"
                                             />
                                         </svg>
-                                        5</span
+                                        <p data-filter="5">5</p>
+                                        </span
                                     >
                                 </div>
                             </div>
-                            <div class="accomodation__card-item">
+                            <div class="accomodation__card-item" data-filter="cheapest">
                                 <div class="accomodation__card-item-img">
                                     <img
                                         src="../assets/uzbekiston.png"
@@ -831,7 +805,7 @@
                                     >
                                 </div>
                                 <div class="accomodation__card-item-desc">
-                                    <p>Hotel Uzbekistan</p>
+                                    <p class="accomodation__card-item-title">Hotel Uzbekistan</p>
                                     <p class="acco__item-address">
                                         Amir Timur Square, Tashkent
                                     </p>
@@ -854,11 +828,12 @@
                                                 fill="#05DBF3"
                                             />
                                         </svg>
-                                        4</span
+                                        <p data-filter="4">4</p>
+                                        </span
                                     >
                                 </div>
                             </div>
-                            <div class="accomodation__card-item">
+                            <div class="accomodation__card-item" data-filter="cheapest">
                                 <div class="accomodation__card-item-img">
                                     <img
                                         src="../assets/radisson.png"
@@ -887,7 +862,7 @@
                                     >
                                 </div>
                                 <div class="accomodation__card-item-desc">
-                                    <p>Radisson Blu Hotel</p>
+                                    <p class="accomodation__card-item-title">Radisson Blu Hotel</p>
                                     <p class="acco__item-address">
                                         Amir Temur Str 88, Tashkent
                                     </p>
@@ -910,8 +885,352 @@
                                                 fill="#05DBF3"
                                             />
                                         </svg>
-                                        4</span
+                                        <p data-filter="4">4</p>
+                                        </span
                                     >
+                                </div>
+                            </div>
+                            <div class="accomodation__card-item" data-filter="best">
+                                <div class="accomodation__card-item-img">
+                                    <img
+                                        src="../assets/hotel-info/hotel-1.jpg"
+                                        alt="hiltonhotel"
+                                    />
+                                    <button>
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5772 3.76422C10.2547 4.07365 9.7456 4.07365 9.42316 3.76422L8.84616 3.2105C8.1708 2.56239 7.25844 2.16667 6.25016 2.16667C4.17909 2.16667 2.50016 3.8456 2.50016 5.91667C2.50016 7.90219 3.57498 9.54171 5.12663 10.8888C6.67959 12.237 8.53633 13.1312 9.6457 13.5876C9.87766 13.683 10.1227 13.683 10.3546 13.5876C11.464 13.1312 13.3207 12.237 14.8737 10.8888C16.4253 9.54171 17.5002 7.90218 17.5002 5.91667C17.5002 3.8456 15.8212 2.16667 13.7502 2.16667C12.7419 2.16667 11.8295 2.56239 11.1542 3.2105L10.5772 3.76422ZM10.0002 2.00798C9.02692 1.074 7.70557 0.5 6.25016 0.5C3.25862 0.5 0.833496 2.92512 0.833496 5.91667C0.833496 11.2235 6.64211 14.1542 9.01165 15.1289C9.6498 15.3914 10.3505 15.3914 10.9887 15.1289C13.3582 14.1542 19.1668 11.2235 19.1668 5.91667C19.1668 2.92512 16.7417 0.5 13.7502 0.5C12.2948 0.5 10.9734 1.074 10.0002 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a
+                                        href="https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p80589211774&&&&&gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-ziHFRHYaKWmX1EDmLU2fPCtbSw0iUe771K2v35KCqvAsBMazRqibBQaAvO2EALw_wcB&gclsrc=aw.ds"
+                                        target="_blank"
+                                        >Explore</a
+                                    >
+                                </div>
+                                <div class="accomodation__card-item-desc">
+                                    <p class="accomodation__card-item-title">ART ECO HOTEL</p>
+                                    <p class="acco__item-address">
+                                        1st Olmachi Ave. 37-39A
+                                    </p>
+                                    <hr />
+                                    <p class="acco__item-price">
+                                        From <span>$700</span> per day
+                                    </p>
+                                    <span class="price__degree"
+                                        ><svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+                                                fill="#05DBF3"
+                                            />
+                                        </svg>
+                                        <p data-filter="5">5</p>
+                                        </span
+                                    >
+                                </div>
+                            </div>
+                            <div class="accomodation__card-item" data-filter="best">
+                                <div class="accomodation__card-item-img">
+                                    <img
+                                        src="../assets/hotel-info/hotel-2.jpg"
+                                        alt="hiltonhotel"
+                                    />
+                                    <button>
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5772 3.76422C10.2547 4.07365 9.7456 4.07365 9.42316 3.76422L8.84616 3.2105C8.1708 2.56239 7.25844 2.16667 6.25016 2.16667C4.17909 2.16667 2.50016 3.8456 2.50016 5.91667C2.50016 7.90219 3.57498 9.54171 5.12663 10.8888C6.67959 12.237 8.53633 13.1312 9.6457 13.5876C9.87766 13.683 10.1227 13.683 10.3546 13.5876C11.464 13.1312 13.3207 12.237 14.8737 10.8888C16.4253 9.54171 17.5002 7.90218 17.5002 5.91667C17.5002 3.8456 15.8212 2.16667 13.7502 2.16667C12.7419 2.16667 11.8295 2.56239 11.1542 3.2105L10.5772 3.76422ZM10.0002 2.00798C9.02692 1.074 7.70557 0.5 6.25016 0.5C3.25862 0.5 0.833496 2.92512 0.833496 5.91667C0.833496 11.2235 6.64211 14.1542 9.01165 15.1289C9.6498 15.3914 10.3505 15.3914 10.9887 15.1289C13.3582 14.1542 19.1668 11.2235 19.1668 5.91667C19.1668 2.92512 16.7417 0.5 13.7502 0.5C12.2948 0.5 10.9734 1.074 10.0002 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a
+                                        href="https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p80589211774&&&&&gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-ziHFRHYaKWmX1EDmLU2fPCtbSw0iUe771K2v35KCqvAsBMazRqibBQaAvO2EALw_wcB&gclsrc=aw.ds"
+                                        target="_blank"
+                                        >Explore</a
+                                    >
+                                </div>
+                                <div class="accomodation__card-item-desc">
+                                    <p class="accomodation__card-item-title">Art Royal Hotel</p>
+                                    <p class="acco__item-address">
+                                        Street 22 b. Index 100022
+                                    </p>
+                                    <hr />
+                                    <p class="acco__item-price">
+                                        From <span>$700</span> per day
+                                    </p>
+                                    <span class="price__degree"
+                                        ><svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+                                                fill="#05DBF3"
+                                            />
+                                        </svg>
+                                        <p data-filter="5">5</p>
+                                        </span
+                                    >
+                                </div>
+                            </div>
+                            <div class="accomodation__card-item" data-filter="best">
+                                <div class="accomodation__card-item-img">
+                                    <img
+                                        src="../assets/hotel-info/hotel-4.jpg"
+                                        alt="hiltonhotel"
+                                    />
+                                    <button>
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5772 3.76422C10.2547 4.07365 9.7456 4.07365 9.42316 3.76422L8.84616 3.2105C8.1708 2.56239 7.25844 2.16667 6.25016 2.16667C4.17909 2.16667 2.50016 3.8456 2.50016 5.91667C2.50016 7.90219 3.57498 9.54171 5.12663 10.8888C6.67959 12.237 8.53633 13.1312 9.6457 13.5876C9.87766 13.683 10.1227 13.683 10.3546 13.5876C11.464 13.1312 13.3207 12.237 14.8737 10.8888C16.4253 9.54171 17.5002 7.90218 17.5002 5.91667C17.5002 3.8456 15.8212 2.16667 13.7502 2.16667C12.7419 2.16667 11.8295 2.56239 11.1542 3.2105L10.5772 3.76422ZM10.0002 2.00798C9.02692 1.074 7.70557 0.5 6.25016 0.5C3.25862 0.5 0.833496 2.92512 0.833496 5.91667C0.833496 11.2235 6.64211 14.1542 9.01165 15.1289C9.6498 15.3914 10.3505 15.3914 10.9887 15.1289C13.3582 14.1542 19.1668 11.2235 19.1668 5.91667C19.1668 2.92512 16.7417 0.5 13.7502 0.5C12.2948 0.5 10.9734 1.074 10.0002 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a
+                                        href="https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p80589211774&&&&&gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-ziHFRHYaKWmX1EDmLU2fPCtbSw0iUe771K2v35KCqvAsBMazRqibBQaAvO2EALw_wcB&gclsrc=aw.ds"
+                                        target="_blank"
+                                        >Explore</a
+                                    >
+                                </div>
+                                <div class="accomodation__card-item-desc">
+                                    <p class="accomodation__card-item-title">InterContinental</p>
+                                    <p class="acco__item-address">
+                                        Tashkent,  100000 Uzbekistan
+                                    </p>
+                                    <hr />
+                                    <p class="acco__item-price">
+                                        From <span>$700</span> per day
+                                    </p>
+                                    <span class="price__degree"
+                                        ><svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+                                                fill="#05DBF3"
+                                            />
+                                        </svg>
+                                        <p data-filter="5">5</p>
+                                        </span
+                                    >
+                                </div>
+                            </div>
+                            <div class="accomodation__card-item" data-filter="best">
+                                <div class="accomodation__card-item-img">
+                                    <img
+                                        src="../assets/hotel-info/hotel-5.jpg"
+                                        alt="hiltonhotel"
+                                    />
+                                    <button>
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5772 3.76422C10.2547 4.07365 9.7456 4.07365 9.42316 3.76422L8.84616 3.2105C8.1708 2.56239 7.25844 2.16667 6.25016 2.16667C4.17909 2.16667 2.50016 3.8456 2.50016 5.91667C2.50016 7.90219 3.57498 9.54171 5.12663 10.8888C6.67959 12.237 8.53633 13.1312 9.6457 13.5876C9.87766 13.683 10.1227 13.683 10.3546 13.5876C11.464 13.1312 13.3207 12.237 14.8737 10.8888C16.4253 9.54171 17.5002 7.90218 17.5002 5.91667C17.5002 3.8456 15.8212 2.16667 13.7502 2.16667C12.7419 2.16667 11.8295 2.56239 11.1542 3.2105L10.5772 3.76422ZM10.0002 2.00798C9.02692 1.074 7.70557 0.5 6.25016 0.5C3.25862 0.5 0.833496 2.92512 0.833496 5.91667C0.833496 11.2235 6.64211 14.1542 9.01165 15.1289C9.6498 15.3914 10.3505 15.3914 10.9887 15.1289C13.3582 14.1542 19.1668 11.2235 19.1668 5.91667C19.1668 2.92512 16.7417 0.5 13.7502 0.5C12.2948 0.5 10.9734 1.074 10.0002 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a
+                                        href="https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p80589211774&&&&&gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-ziHFRHYaKWmX1EDmLU2fPCtbSw0iUe771K2v35KCqvAsBMazRqibBQaAvO2EALw_wcB&gclsrc=aw.ds"
+                                        target="_blank"
+                                        >Explore</a
+                                    >
+                                </div>
+                                <div class="accomodation__card-item-desc">
+                                    <p class="accomodation__card-item-title">T-CITY PRESIDENTIAL</p>
+                                    <p class="acco__item-address">
+                                        100027, Tashkent City
+                                    </p>
+                                    <hr />
+                                    <p class="acco__item-price">
+                                        From <span>$700</span> per day
+                                    </p>
+                                    <span class="price__degree"
+                                        ><svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+                                                fill="#05DBF3"
+                                            />
+                                        </svg>
+                                        <p data-filter="5">5</p>
+                                        </span
+                                    >
+                                </div>
+                            </div>
+                            <div class="accomodation__card-item" data-filter="best">
+                                <div class="accomodation__card-item-img">
+                                    <img
+                                        src="../assets/hotel-info/hotel-6.jpg"
+                                        alt="hiltonhotel"
+                                    />
+                                    <button>
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5772 3.76422C10.2547 4.07365 9.7456 4.07365 9.42316 3.76422L8.84616 3.2105C8.1708 2.56239 7.25844 2.16667 6.25016 2.16667C4.17909 2.16667 2.50016 3.8456 2.50016 5.91667C2.50016 7.90219 3.57498 9.54171 5.12663 10.8888C6.67959 12.237 8.53633 13.1312 9.6457 13.5876C9.87766 13.683 10.1227 13.683 10.3546 13.5876C11.464 13.1312 13.3207 12.237 14.8737 10.8888C16.4253 9.54171 17.5002 7.90218 17.5002 5.91667C17.5002 3.8456 15.8212 2.16667 13.7502 2.16667C12.7419 2.16667 11.8295 2.56239 11.1542 3.2105L10.5772 3.76422ZM10.0002 2.00798C9.02692 1.074 7.70557 0.5 6.25016 0.5C3.25862 0.5 0.833496 2.92512 0.833496 5.91667C0.833496 11.2235 6.64211 14.1542 9.01165 15.1289C9.6498 15.3914 10.3505 15.3914 10.9887 15.1289C13.3582 14.1542 19.1668 11.2235 19.1668 5.91667C19.1668 2.92512 16.7417 0.5 13.7502 0.5C12.2948 0.5 10.9734 1.074 10.0002 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a
+                                        href="https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p80589211774&&&&&gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-ziHFRHYaKWmX1EDmLU2fPCtbSw0iUe771K2v35KCqvAsBMazRqibBQaAvO2EALw_wcB&gclsrc=aw.ds"
+                                        target="_blank"
+                                        >Explore</a
+                                    >
+                                </div>
+                                <div class="accomodation__card-item-desc">
+                                    <p class="accomodation__card-item-title">Baden-Baden Hotel Tashkent</p>
+                                    <p class="acco__item-address">
+                                        100167, Tashkent
+                                    </p>
+                                    <hr />
+                                    <p class="acco__item-price">
+                                        From <span>$700</span> per day
+                                    </p>
+                                    <span class="price__degree"
+                                        ><svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+                                                fill="#05DBF3"
+                                            />
+                                        </svg>
+                                        <p data-filter="5">5</p>
+                                        </span
+                                    >
+                                </div>
+                            </div>
+                            <div class="accomodation__card-item" data-filter="best">
+                                <div class="accomodation__card-item-img">
+                                    <img
+                                        src="../assets/hotel-info/hotel-7.jpg"
+                                        alt="hiltonhotel"
+                                    />
+                                    <button>
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5772 3.76422C10.2547 4.07365 9.7456 4.07365 9.42316 3.76422L8.84616 3.2105C8.1708 2.56239 7.25844 2.16667 6.25016 2.16667C4.17909 2.16667 2.50016 3.8456 2.50016 5.91667C2.50016 7.90219 3.57498 9.54171 5.12663 10.8888C6.67959 12.237 8.53633 13.1312 9.6457 13.5876C9.87766 13.683 10.1227 13.683 10.3546 13.5876C11.464 13.1312 13.3207 12.237 14.8737 10.8888C16.4253 9.54171 17.5002 7.90218 17.5002 5.91667C17.5002 3.8456 15.8212 2.16667 13.7502 2.16667C12.7419 2.16667 11.8295 2.56239 11.1542 3.2105L10.5772 3.76422ZM10.0002 2.00798C9.02692 1.074 7.70557 0.5 6.25016 0.5C3.25862 0.5 0.833496 2.92512 0.833496 5.91667C0.833496 11.2235 6.64211 14.1542 9.01165 15.1289C9.6498 15.3914 10.3505 15.3914 10.9887 15.1289C13.3582 14.1542 19.1668 11.2235 19.1668 5.91667C19.1668 2.92512 16.7417 0.5 13.7502 0.5C12.2948 0.5 10.9734 1.074 10.0002 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a
+                                        href="https://www.hilton.com/en/hotels/tastchi-hilton-tashkent-city/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121127567_1003528_p80589211774&&&&&gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-ziHFRHYaKWmX1EDmLU2fPCtbSw0iUe771K2v35KCqvAsBMazRqibBQaAvO2EALw_wcB&gclsrc=aw.ds"
+                                        target="_blank"
+                                        >Explore</a
+                                    >
+                                </div>
+                                <div class="accomodation__card-item-desc">
+                                    <p class="accomodation__card-item-title">Panarams Tashkent Hotel</p>
+                                    <p class="acco__item-address">
+                                        2 Boykurgon Street
+                                    </p>
+                                    <hr />
+                                    <p class="acco__item-price">
+                                        From <span>$700</span> per day
+                                    </p>
+                                    <span class="price__degree"
+                                        ><svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z"
+                                                fill="#05DBF3"
+                                            />
+                                        </svg>
+                                        <p data-filter="5">5</p>
+                                        </span
+                                    >
+                                    
                                 </div>
                             </div>
                         </div>
@@ -1173,30 +1492,34 @@
         <footer>
             <div class="container">
                 <div class="footer__box">
-                    <div class="logo__section footer__logo-section">
+                    <div class="logo__section footer__logo">
                         <img src="../assets/logo.png" alt="logo" />
-                        <div class="logo__name">
-                            <p>UzTravel</p>
-                            <p>Guide</p>
-                        </div>
+                        <img
+                        class="nav__logo-slogan"
+                        src="../assets/Frame 1261154401.png"
+                        alt=""
+                        />
                     </div>
                     <div class="information">
                         <p>Information</p>
-                        <a href="../index.html" target="_blank">About</a><br />
-                        <a href="../uztravel/tripplan.html" target="_blank">Plan to visit</a><br />
-                        <a href="./destination.html" target="_blank"
+                        <a href="#">About</a><br />
+                        <a href="#">Plan to visit</a><br />
+                        <a href="../pages/destination.html" target="_blank"
                             >Destination</a
                         ><br />
-                        <a href="#">Accomodation</a><br />
-                        <a href="../uztravel/index.html" target="_blank"
-                            >Food</a
-                        >
+                        <a href="../pages/accomodation.html" target="_blank"
+                            >Accomodation</a
+                        ><br />
+                        <a href="../uztravel/index.html" target="_blank">Food</a>
                     </div>
                     <div class="support">
                         <p>Support</p>
-                        <a href="./support.html" target="_blank">Help</a><br />
+                        <a href="../pages/support.html" target="_blank">Help</a
+                        ><br />
                         <a href="#">Privacy & Policy</a><br />
-                        <a href="./contactus.html" target="_blank">Contact</a>
+                        <a href="../pages/contactus.html" target="_blank"
+                            >Contact</a
+                        >
                     </div>
                     <div class="create__profile">
                         <p>CREATE YOUR PROFILE</p>

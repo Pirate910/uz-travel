@@ -22,8 +22,36 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="../js/destinations-swiper.js" defer></script>
         <script src="../js/adventures.js" defer></script>
+        <script src="../js/destination-popup.js" defer></script>
     </head>
     <body>
+
+        <div class="destination-popup">
+            <div class="destination-popup__container container">
+                <button onclick="
+                    
+                    const closePopup = document.querySelector('.destination-popup')
+                    closePopup.style.right = '100%'
+
+                    " class="destination-popup__close-btn">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9997 33.3333C27.3635 33.3333 33.333 27.3637 33.333 19.9999C33.333 12.6361 27.3635 6.66659 19.9997 6.66659C12.6359 6.66659 6.66634 12.6361 6.66634 19.9999C6.66634 27.3637 12.6359 33.3333 19.9997 33.3333ZM19.9997 36.6666C29.2044 36.6666 36.6663 29.2047 36.6663 19.9999C36.6663 10.7952 29.2044 3.33325 19.9997 3.33325C10.7949 3.33325 3.33301 10.7952 3.33301 19.9999C3.33301 29.2047 10.7949 36.6666 19.9997 36.6666Z" fill="#05DBF3"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8212 13.8214C14.472 13.1705 15.5273 13.1705 16.1782 13.8214L19.9997 17.6429L23.8212 13.8214C24.472 13.1705 25.5273 13.1705 26.1782 13.8214C26.8291 14.4723 26.8291 15.5276 26.1782 16.1784L22.3567 19.9999L26.1782 23.8214C26.8291 24.4723 26.8291 25.5276 26.1782 26.1784C25.5273 26.8293 24.472 26.8293 23.8212 26.1784L19.9997 22.3569L16.1782 26.1784C15.5273 26.8293 14.472 26.8293 13.8212 26.1784C13.1703 25.5276 13.1703 24.4723 13.8212 23.8214L17.6427 19.9999L13.8212 16.1784C13.1703 15.5276 13.1703 14.4723 13.8212 13.8214Z" fill="#05DBF3"/>
+                      </svg>
+                </button>
+                <div class="destination-popup-map">
+                    <div class="destination-popup-places">
+                        <iframe data-filter="bukhara" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98121.96811677901!2d64.26708230424364!3d39.77756419745991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060e65993cd5%3A0xc87beaf40e48e767!2z0JHRg9GF0LDRgNCwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1735663957644!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="samarkand" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98316.68659832998!2d66.88531498624128!3d39.640791313430455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d191960077df7%3A0x487636d9d13f2f57!2z0KHQsNC80LDRgNC60LDQvdC0LCDQodCw0LzQsNGA0LrQsNC90LTRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1735663885089!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="khiva" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47892.86430001329!2d60.30871791956098!3d41.38920356619267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfa413ffe48cf9%3A0xcd75f47f7a6dc0cd!2z0KXQuNCy0LAsINCl0L7RgNC10LfQvNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1735663917457!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="andijon" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96678.62142366444!2d72.23707338065333!3d40.77946491411439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bc901d6b13d4ef%3A0xfc45bcaa7973dfac!2z0JDQvdC00LjQttCw0L0sINCQ0L3QtNC40LbQsNC90YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1735663987687!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="tashkent" class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95942.48020528293!2d69.19679470065093!3d41.2826969521322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1735658922074!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <header>
             <div class="container">
                 <div class="log">
@@ -286,7 +314,7 @@
                 <div class="best__places">
                     <div class="tashkent">
                         <img src="../assets/tashkent.png" alt="tashkent" />
-                        <button type="button">
+                        <button class="best-place-btn" type="button">
                             <svg
                                 width="30"
                                 height="38"
@@ -301,11 +329,16 @@
                                     fill="#05DBF3"
                                 />
                             </svg>
-                            Tashkent
+                            <a onclick="
+
+                            const closePopup = document.querySelector('.destination-popup')
+                            closePopup.style.right = '0'
+
+                            " data-filter="tashkent">Tashkent</a>
                         </button>
                     </div>
                     <div class="samarkand">
-                        <button>
+                        <button class="best-place-btn">
                             <svg
                                 width="30"
                                 height="38"
@@ -320,11 +353,16 @@
                                     fill="#05DBF3"
                                 />
                             </svg>
-                            Samarkand
+                            <a onclick="
+
+                            const closePopup = document.querySelector('.destination-popup')
+                            closePopup.style.right = '0'
+
+                            " data-filter="samarkand">Samarkand</a>
                         </button>
                     </div>
                     <div class="khiva">
-                        <button>
+                        <button class="best-place-btn">
                             <svg
                                 width="30"
                                 height="38"
@@ -339,7 +377,12 @@
                                     fill="#05DBF3"
                                 />
                             </svg>
-                            Khiva
+                            <a onclick="
+
+                            const closePopup = document.querySelector('.destination-popup')
+                            closePopup.style.right = '0'
+
+                            " data-filter="khiva">Khiva</a>
                         </button>
                     </div>
                     <div class="best__places-info">
@@ -348,7 +391,7 @@
                     </div>
                     <div class="bukhara">
                         <img src="../assets/bukhara.png" alt="bukhara" />
-                        <button type="button">
+                        <button class="best-place-btn" type="button">
                             <svg
                                 width="30"
                                 height="38"
@@ -363,13 +406,18 @@
                                     fill="#05DBF3"
                                 />
                             </svg>
-                            Bukhara
+                            <a onclick="
+
+                            const closePopup = document.querySelector('.destination-popup')
+                            closePopup.style.right = '0'
+
+                            " data-filter="bukhara">Bukhara</a>
                         </button>
                     </div>
                 </div>
                 <div class="andijon">
                     <img src="../assets/andijon.jpg" alt="andijon" />
-                    <button type="button">
+                    <button class="best-place-btn" type="button">
                         <svg
                             width="30"
                             height="38"
@@ -384,7 +432,12 @@
                                 fill="#05DBF3"
                             />
                         </svg>
-                        Andijon
+                        <a onclick="
+
+                        const closePopup = document.querySelector('.destination-popup')
+                        closePopup.style.right = '0'
+
+                        " data-filter="andijon">Andijon</a>
                     </button>
                 </div>
             </div>
@@ -404,22 +457,24 @@
                             placeholder="Region"
                             class="region"
                         />
-                        <button>
-                            <svg
-                                width="20"
-                                height="20"
-                                viewBox="0 0 20 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
-                                    fill="#FCFCFD"
-                                />
-                            </svg>
-                        </button>
+                        <div>
+                            <button>
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199ZM14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8Z"
+                                        fill="#FCFCFD"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <hr />
                     <div class="search__bottom-btn">
@@ -775,28 +830,32 @@
                 <div class="footer__box">
                     <div class="logo__section footer__logo">
                         <img src="../assets/logo.png" alt="logo" />
-                        <div class="logo__name">
-                            <p>UzTravel</p>
-                            <p>Guide</p>
-                        </div>
+                        <img
+                        class="nav__logo-slogan"
+                        src="../assets/Frame 1261154401.png"
+                        alt=""
+                        />
                     </div>
                     <div class="information">
                         <p>Information</p>
-                        <a href="../index.html" target="_blank">About</a><br />
-                        <a href="../uztravel/tripplan.html" target="_blank">Plan to visit</a><br />
-                        <a href="#">Destination</a><br />
-                        <a href="./accomodation.html" target="_blank"
+                        <a href="#">About</a><br />
+                        <a href="#">Plan to visit</a><br />
+                        <a href="../pages/destination.html" target="_blank"
+                            >Destination</a
+                        ><br />
+                        <a href="../pages/accomodation.html" target="_blank"
                             >Accomodation</a
                         ><br />
-                        <a href="../uztravel/index.html" target="_blank"
-                            >Food</a
-                        >
+                        <a href="../uztravel/index.html" target="_blank">Food</a>
                     </div>
                     <div class="support">
                         <p>Support</p>
-                        <a href="./support.html" target="_blank">Help</a><br />
+                        <a href="../pages/support.html" target="_blank">Help</a
+                        ><br />
                         <a href="#">Privacy & Policy</a><br />
-                        <a href="./contactus.html" target="_blank">Contact</a>
+                        <a href="../pages/contactus.html" target="_blank"
+                            >Contact</a
+                        >
                     </div>
                     <div class="create__profile">
                         <p>CREATE YOUR PROFILE</p>

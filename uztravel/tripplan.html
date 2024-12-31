@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Trip-Plan</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../general/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,99 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Englebert&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Englebert&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./../assets/icons/favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <div id="popup" class="popup">
+      <div class="popup-wrapper container">
+        <div class="popup-side popup-info-side">
+          <div class="popup-info-side__title"><h1>Upcoming trip</h1></div>
+          <div class="booking-details">
+            <div class="booking-details__intro">
+              <h1 class="booking-details__title">Uzbekistan Airways</h1>
+              <div class="booking-details__profile">
+                <a href="./../pages/profile.html" class="booking-details__profile-img">
+                    <img src="./assets/images/booking/Avatar.png" alt="">
+                </a>
+                <div class="booking-details__profile-name">Alex</div>
+              </div>
+            </div>
+            <div class="booking-details__trip-plan">
+              <div class="booking-details__trip-plan--ticket-info">
+                <div class="booking-details__ticket-side">
+                  <div class="booking-details__ticket-data">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 6H5.5C4.94772 6 4.5 6.44772 4.5 7V19C4.5 19.5523 4.94772 20 5.5 20H19.5C20.0523 20 20.5 19.5523 20.5 19V7C20.5 6.44771 20.0523 6 19.5 6ZM5.5 4C3.84315 4 2.5 5.34315 2.5 7V19C2.5 20.6569 3.84315 22 5.5 22H19.5C21.1569 22 22.5 20.6569 22.5 19V7C22.5 5.34315 21.1569 4 19.5 4H5.5Z" fill="#033E8C"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 12C9.94772 12 9.5 12.4477 9.5 13C9.5 13.5523 9.94772 14 10.5 14H17.5C18.0523 14 18.5 13.5523 18.5 13C18.5 12.4477 18.0523 12 17.5 12H10.5ZM7.5 16C6.94772 16 6.5 16.4477 6.5 17C6.5 17.5523 6.94772 18 7.5 18H13.5C14.0523 18 14.5 17.5523 14.5 17C14.5 16.4477 14.0523 16 13.5 16H7.5Z" fill="#033E8C"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2C6.94772 2 6.5 2.44772 6.5 3V7C6.5 7.55228 6.94772 8 7.5 8C8.05228 8 8.5 7.55228 8.5 7V3C8.5 2.44772 8.05228 2 7.5 2ZM17.5 2C16.9477 2 16.5 2.44772 16.5 3V7C16.5 7.55228 16.9477 8 17.5 8C18.0523 8 18.5 7.55228 18.5 7V3C18.5 2.44772 18.0523 2 17.5 2Z" fill="#033E8C"/>
+                      </svg>
+                      <div class="booking-details__ticket-data--text-block">
+                        <p>Check-in</p>
+                        <p>Dec 15, 2024</p>
+                      </div>
+                  </div>
+                  <div class="booking-details__ticket-data">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.5 6H5.5C4.94772 6 4.5 6.44772 4.5 7V19C4.5 19.5523 4.94772 20 5.5 20H19.5C20.0523 20 20.5 19.5523 20.5 19V7C20.5 6.44771 20.0523 6 19.5 6ZM5.5 4C3.84315 4 2.5 5.34315 2.5 7V19C2.5 20.6569 3.84315 22 5.5 22H19.5C21.1569 22 22.5 20.6569 22.5 19V7C22.5 5.34315 21.1569 4 19.5 4H5.5Z" fill="#033E8C"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 12C9.94772 12 9.5 12.4477 9.5 13C9.5 13.5523 9.94772 14 10.5 14H17.5C18.0523 14 18.5 13.5523 18.5 13C18.5 12.4477 18.0523 12 17.5 12H10.5ZM7.5 16C6.94772 16 6.5 16.4477 6.5 17C6.5 17.5523 6.94772 18 7.5 18H13.5C14.0523 18 14.5 17.5523 14.5 17C14.5 16.4477 14.0523 16 13.5 16H7.5Z" fill="#033E8C"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 2C6.94772 2 6.5 2.44772 6.5 3V7C6.5 7.55228 6.94772 8 7.5 8C8.05228 8 8.5 7.55228 8.5 7V3C8.5 2.44772 8.05228 2 7.5 2ZM17.5 2C16.9477 2 16.5 2.44772 16.5 3V7C16.5 7.55228 16.9477 8 17.5 8C18.0523 8 18.5 7.55228 18.5 7V3C18.5 2.44772 18.0523 2 17.5 2Z" fill="#033E8C"/>
+                      </svg>
+                      <div class="booking-details__ticket-data--text-block">
+                        <p>Check-in</p>
+                        <p>Dec 18, 2024</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="booking-details__ticket-side">
+                  <div class="booking-details__ticket-data">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 13C8.13401 13 5 16.134 5 20V22C5 22.5523 4.55228 23 4 23C3.44772 23 3 22.5523 3 22V20C3 15.0294 7.02944 11 12 11C16.9706 11 21 15.0294 21 20V22C21 22.5523 20.5523 23 20 23C19.4477 23 19 22.5523 19 22V20C19 16.134 15.866 13 12 13Z" fill="#033E8C"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11ZM12 13C15.3137 13 18 10.3137 18 7C18 3.68629 15.3137 1 12 1C8.68629 1 6 3.68629 6 7C6 10.3137 8.68629 13 12 13Z" fill="#033E8C"/>
+                      </svg>
+                      <div class="booking-details__ticket-data--text-block">
+                        <p>Guests</p>
+                        <p>2 guests</p>
+                      </div>
+                  </div>
+                  <div class="booking-details__ticket-data">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0731 0.217976C11.6543 -0.0726588 12.335 -0.0726588 12.9163 0.217976L12.9235 0.221592C13.5698 0.552449 14.1109 1.11446 14.4884 1.72488C14.8656 2.33485 15.1276 3.07135 15.1276 3.80106V7.02758L21.307 9.69169C21.8486 9.92009 22.2873 10.3432 22.5872 10.8004C22.888 11.2591 23.0993 11.8285 23.0993 12.4096V13.8766C23.0993 14.5651 22.8331 15.2275 22.2462 15.612C21.6606 15.9957 20.9481 15.9766 20.3184 15.7067L20.3163 15.7058L15.1276 13.4655V16.2714C15.1279 16.2739 15.129 16.2823 15.1322 16.2966C15.1377 16.3203 15.1469 16.3498 15.1599 16.381C15.1729 16.4123 15.1868 16.438 15.1983 16.4558C15.2025 16.4624 15.2056 16.4667 15.2074 16.469C15.2117 16.4732 15.216 16.4774 15.2203 16.4817L17.8004 19.0732C17.8002 19.0729 17.8006 19.0734 17.8004 19.0732C18.0762 19.3493 18.2376 19.7084 18.3136 20.034C18.3892 20.3579 18.4042 20.7497 18.2787 21.1192L17.7762 22.6381C17.3829 23.7788 16.0774 24.3229 14.9964 23.7824C14.9364 23.7524 14.8801 23.7155 14.8288 23.6723L12.1731 21.4383C12.0945 21.3709 11.9062 21.3709 11.8276 21.4383L11.8216 21.4434L9.17193 23.6723C9.12217 23.7141 9.06778 23.7502 9.00984 23.7797C7.91948 24.3347 6.59671 23.7839 6.23031 22.6214L5.73271 21.1173C5.73261 21.117 5.7328 21.1175 5.73271 21.1173C5.60971 20.7476 5.62158 20.357 5.69875 20.0285C5.77574 19.7007 5.93784 19.3473 6.21108 19.0737C6.21088 19.0739 6.21128 19.0736 6.21108 19.0737L8.78757 16.4859C8.78944 16.4834 8.79343 16.4779 8.79907 16.4687C8.8115 16.4486 8.82604 16.4207 8.83955 16.3876C8.85304 16.3545 8.86257 16.3234 8.8682 16.2985C8.87173 16.283 8.8728 16.274 8.87308 16.2715V13.4655L3.68441 15.7058L3.6823 15.7067C3.05263 15.9766 2.34014 15.9957 1.75452 15.612C1.16764 15.2275 0.901367 14.5651 0.901367 13.8766V12.4096C0.901367 11.8286 1.11258 11.2588 1.41438 10.8005C1.71376 10.3459 2.15326 9.92401 2.69821 9.7011L8.8617 7.03909V3.81243C8.8617 3.08333 9.12334 2.34458 9.49982 1.73237C9.87648 1.11987 10.4176 0.553474 11.0659 0.221626L11.0731 0.217976ZM11.8389 1.74221C11.5331 1.90007 11.2062 2.214 10.9528 2.62592C10.6982 3.04002 10.5675 3.47257 10.5675 3.81243V7.22401C10.5675 7.53317 10.454 7.80452 10.3252 8.00065C10.1968 8.19607 9.99453 8.40633 9.71529 8.5285L9.71161 8.53011L3.36609 11.2707L3.34687 11.2788C3.19173 11.3413 2.99822 11.4969 2.839 11.7386C2.68024 11.9797 2.60715 12.2286 2.60715 12.4096V13.8766C2.60715 14.0099 2.63215 14.0912 2.6519 14.1333C2.67048 14.1729 2.68631 14.1832 2.68934 14.1852C2.6925 14.1873 2.70918 14.1981 2.75442 14.1995C2.80221 14.2009 2.8874 14.1914 3.00938 14.1393C3.00906 14.1394 3.00971 14.1391 3.00938 14.1393L8.58771 11.7307C9.00363 11.5466 9.51841 11.5201 9.95825 11.809C10.3983 12.0981 10.5789 12.5816 10.5789 13.035V16.276C10.5789 16.5485 10.5068 16.8166 10.4191 17.0316C10.332 17.2452 10.1955 17.4899 10.0004 17.6855C9.99999 17.6858 9.99963 17.6862 9.99927 17.6865L7.41917 20.278C7.41921 20.278 7.40977 20.2886 7.39726 20.3128C7.38311 20.3403 7.36919 20.3766 7.35933 20.4186C7.34949 20.4605 7.34564 20.4997 7.34612 20.5317C7.34657 20.5614 7.35054 20.5762 7.35096 20.5778C7.351 20.5779 7.351 20.578 7.35096 20.5778L7.35157 20.5797L7.85691 22.1072C7.89761 22.2383 8.0348 22.3174 8.17377 22.2829L10.7209 20.1402C11.4374 19.5292 12.5633 19.5292 13.2798 20.1402L15.8224 22.2791C15.9568 22.3087 16.1082 22.2369 16.1623 22.0855L16.6628 20.5728C16.6633 20.5704 16.6656 20.5586 16.666 20.5365C16.6664 20.5052 16.6626 20.4652 16.6524 20.4216C16.6423 20.378 16.6279 20.34 16.6133 20.3115C16.6017 20.2888 16.5934 20.2787 16.5927 20.2778C16.5927 20.2778 16.5927 20.2778 16.5927 20.2778L14.0193 17.693C13.8155 17.4969 13.675 17.2519 13.5858 17.0382C13.4942 16.8189 13.4218 16.5491 13.4218 16.276V13.035C13.4218 12.5891 13.5947 12.1031 14.0399 11.8122C14.4804 11.5243 14.99 11.5569 15.3945 11.7229L15.4089 11.7288L20.9903 14.1389C20.9907 14.139 20.9911 14.1392 20.9914 14.1393C21.1133 14.1914 21.1985 14.2009 21.2463 14.1995C21.2915 14.1981 21.3082 14.1873 21.3114 14.1852C21.3144 14.1832 21.3302 14.1729 21.3488 14.1333C21.3686 14.0912 21.3935 14.0099 21.3935 13.8766V12.4096C21.3935 12.2288 21.3206 11.9794 21.1608 11.7359C21.0009 11.4921 20.8044 11.3306 20.6429 11.2629L20.6351 11.2596L14.274 8.51714C13.9948 8.39497 13.7925 8.1847 13.6642 7.98927C13.5354 7.79315 13.4218 7.5218 13.4218 7.21263V3.80106C13.4218 3.46181 13.2915 3.0327 13.0376 2.62203C12.7851 2.2137 12.4581 1.90103 12.1504 1.74221C12.0511 1.69365 11.9382 1.69365 11.8389 1.74221Z" fill="#033E8C"/>
+                      </svg>
+                      <div class="booking-details__ticket-data--text-block">
+                        <p>Activity</p>
+                        <p>Airplane</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-details__price">
+                <div class="booking-details__price-discount booking-details-price-list">
+                  <p>10%  discount</p>
+                  <p>-$30.6</p>
+                </div>
+                <div class="booking-details__price-total booking-details-price-list">
+                  <p>Total</p>
+                  <p>$300</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-side popup-image-side">
+          <img src="./assets/images/booking/popup-image.png" alt="">
+        </div>
+        <button onclick="
+        const popup = document.querySelector('#popup')
+        popup.style.right = '100%'
+        " class="popup-close-btn">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9997 33.3333C27.3635 33.3333 33.333 27.3637 33.333 19.9999C33.333 12.6361 27.3635 6.66659 19.9997 6.66659C12.6359 6.66659 6.66634 12.6361 6.66634 19.9999C6.66634 27.3637 12.6359 33.3333 19.9997 33.3333ZM19.9997 36.6666C29.2044 36.6666 36.6663 29.2047 36.6663 19.9999C36.6663 10.7952 29.2044 3.33325 19.9997 3.33325C10.7949 3.33325 3.33301 10.7952 3.33301 19.9999C3.33301 29.2047 10.7949 36.6666 19.9997 36.6666Z" fill="#05DBF3"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8212 13.8214C14.472 13.1705 15.5273 13.1705 16.1782 13.8214L19.9997 17.6429L23.8212 13.8214C24.472 13.1705 25.5273 13.1705 26.1782 13.8214C26.8291 14.4723 26.8291 15.5276 26.1782 16.1784L22.3567 19.9999L26.1782 23.8214C26.8291 24.4723 26.8291 25.5276 26.1782 26.1784C25.5273 26.8293 24.472 26.8293 23.8212 26.1784L19.9997 22.3569L16.1782 26.1784C15.5273 26.8293 14.472 26.8293 13.8212 26.1784C13.1703 25.5276 13.1703 24.4723 13.8212 23.8214L17.6427 19.9999L13.8212 16.1784C13.1703 15.5276 13.1703 14.4723 13.8212 13.8214Z" fill="#05DBF3"/>
+          </svg>
+        </button>
+      </div>
+    </div>
     <header>
       <div class="container">
         <div class="log">
@@ -164,21 +254,10 @@
 
                 <div class="booking__card-btn-block">
                   <div>
-                    <button class="booking__card-btn-message">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                        fill="#05DBF3"
-                      />
-                    </svg>
-                    </button>
-                    <button class="booking__card-btn-details">Detail</button>
+                    <button onclick="
+                    const openPopup = document.querySelector('#popup')
+                    openPopup.style.right = '0'
+                    " class="booking__card-btn-details">Detail</button>
                   </div>
                 </div>
               </div>
@@ -194,21 +273,10 @@
 
               <div class="booking__card-btn-block">
                 <div>
-                  <button class="booking__card-btn-message">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                      fill="#05DBF3"
-                    />
-                  </svg>
-                  </button>
-                  <button class="booking__card-btn-details">Detail</button>
+                  <button onclick="
+                  const openPopup = document.querySelector('#popup')
+                  openPopup.style.right = '0'
+                  " class="booking__card-btn-details">Detail</button>
                 </div>
               </div>
             </div>
@@ -224,21 +292,10 @@
 
               <div class="booking__card-btn-block">
                 <div>
-                  <button class="booking__card-btn-message">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                      fill="#05DBF3"
-                    />
-                  </svg>
-                  </button>
-                  <button class="booking__card-btn-details">Detail</button>
+                  <button onclick="
+                  const openPopup = document.querySelector('#popup')
+                  openPopup.style.right = '0'
+                  " class="booking__card-btn-details">Detail</button>
                 </div>
               </div>
             </div>
@@ -254,21 +311,10 @@
 
               <div class="booking__card-btn-block">
                 <div>
-                  <button class="booking__card-btn-message">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                      fill="#05DBF3"
-                    />
-                  </svg>
-                  </button>
-                  <button class="booking__card-btn-details">Detail</button>
+                  <button onclick="
+                  const openPopup = document.querySelector('#popup')
+                  openPopup.style.right = '0'
+                  " class="booking__card-btn-details">Detail</button>
                 </div>
               </div>
             </div>
@@ -285,196 +331,75 @@
 
                 <div class="booking__card-btn-block">
                   <div>
-                    <button class="booking__card-btn-message">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                        fill="#05DBF3"
-                      />
-                    </svg>
-                    </button>
-                    <button class="booking__card-btn-details">Detail</button>
+                    <button onclick="
+                    const openPopup = document.querySelector('#popup')
+                    openPopup.style.right = '0'
+                    " class="booking__card-btn-details">Detail</button>
                   </div>
                 </div>
               </div>
-          </div>
-          <div class="booking__card booking__railway"  data-filter="railway">
-            <img src="./assets/images/booking/railway.jpg" alt="" />
-            <div class="booking__card-general">
-              <div class="booking__card-text-block">
-                <p class="booking__card-title">Tashkent Central Railway Station (Toshkent Markaziy Vokzal)</p>
-                <p class="booking__card-address">7 Tashkent Ring Road, Tashkent</p>
-                <p class="booking__card-price">$10–$300 (varies by domestic or international routes)</p>
-              </div>
-
-              <div class="booking__card-btn-block">
-                <div>
-                  <button class="booking__card-btn-message">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                      fill="#05DBF3"
-                    />
-                  </svg>
-                  </button>
-                  <button class="booking__card-btn-details">Detail</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="booking__card booking__railway"  data-filter="railway">
-          <img src="./assets/images/booking/railway.jpg" alt="" />
-          <div class="booking__card-general">
-            <div class="booking__card-text-block">
-              <p class="booking__card-title">Tashkent Central Railway Station (Toshkent Markaziy Vokzal)</p>
-              <p class="booking__card-address">7 Tashkent Ring Road, Tashkent</p>
-              <p class="booking__card-price">$10–$300 (varies by domestic or international routes)</p>
-            </div>
-
-            <div class="booking__card-btn-block">
-              <div>
-                <button class="booking__card-btn-message">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                    fill="#05DBF3"
-                  />
-                </svg>
-                </button>
-                <button class="booking__card-btn-details">Detail</button>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="booking__card booking__railway"  data-filter="railway">
-        <img src="./assets/images/booking/railway.jpg" alt="" />
-        <div class="booking__card-general">
-          <div class="booking__card-text-block">
-            <p class="booking__card-title">Tashkent Central Railway Station (Toshkent Markaziy Vokzal)</p>
-            <p class="booking__card-address">7 Tashkent Ring Road, Tashkent</p>
-            <p class="booking__card-price">$10–$300 (varies by domestic or international routes)</p>
-          </div>
-
-          <div class="booking__card-btn-block">
-            <div>
-              <button class="booking__card-btn-message">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM13 13.75H7C6.59 13.75 6.25 13.41 6.25 13C6.25 12.59 6.59 12.25 7 12.25H13C13.41 12.25 13.75 12.59 13.75 13C13.75 13.41 13.41 13.75 13 13.75ZM17 8.75H7C6.59 8.75 6.25 8.41 6.25 8C6.25 7.59 6.59 7.25 7 7.25H17C17.41 7.25 17.75 7.59 17.75 8C17.75 8.41 17.41 8.75 17 8.75Z"
-                  fill="#05DBF3"
-                />
-              </svg>
-              </button>
-              <button class="booking__card-btn-details">Detail</button>
-            </div>
-          </div>
-        </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <div class="container">
-        <div class="footer__item">
-          <div class="nav__logo">
-            <img class="nav__logo-logo" src="./assets/images/Logo.png" alt="" />
-            <img
-              class="nav__logo-slogan"
-              src="./assets/images/Frame 1261154401.png"
-              alt=""
-            />
-          </div>
-          <div class="footer__item-nav">
-            <div class="footer__navigations">
-              <div class="footer__nav">
-                <p class="footer__nav-title">Information</p>
-                <ul>
-                  <li>
-                    <a href="../index.html" target="_blank">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Plan to visit</a>
-                  </li>
-                  <li>
-                    <a href="../pages/destination.html" target="_blank">Destination</a>
-                  </li>
-                  <li>
-                    <a href="../pages/accomodation.html" target="_blank">Accomodation</a>
-                  </li>
-                  <li>
-                    <a href="./index.html" target="_blank">Food</a>
-                  </li>
-                </ul>
+          <div class="footer__box">
+              <div class="logo__section footer__logo">
+                  <img src="../assets/logo.png" alt="logo" />
+                  <img
+                  class="nav__logo-slogan"
+                  src="../assets/Frame 1261154401.png"
+                  alt=""
+                  />
               </div>
-              <div class="footer__nav">
-                <p class="footer__nav-title">Support</p>
-                <ul>
-                  <li>
-                    <a href="../pages/support.html" target="_blank">Help</a>
-                  </li>
-                  <li>
-                    <a href="">Privacy & Policy</a>
-                  </li>
-                  <li>
-                    <a href="../pages/contactus.html" target="_blank">Contact us</a>
-                  </li>
-                </ul>
+              <div class="information">
+                  <p>Information</p>
+                  <a href="#">About</a><br />
+                  <a href="#">Plan to visit</a><br />
+                  <a href="../pages/destination.html" target="_blank"
+                      >Destination</a
+                  ><br />
+                  <a href="../pages/accomodation.html" target="_blank"
+                      >Accomodation</a
+                  ><br />
+                  <a href="../uztravel/index.html" target="_blank">Food</a>
               </div>
-            </div>
-            <div class="footer__form">
-              <label class="footer__nav-title">Create your profile</label>
-              <div class="email-input">
-                <input
-                  class="footer__input"
-                  type="text"
-                  placeholder="Enter your email"
-                />
-                <button>
-                  <svg
-                    width="14"
-                    height="9"
-                    viewBox="0 0 14 9"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+              <div class="support">
+                  <p>Support</p>
+                  <a href="../pages/support.html" target="_blank">Help</a
+                  ><br />
+                  <a href="#">Privacy & Policy</a><br />
+                  <a href="../pages/contactus.html" target="_blank"
+                      >Contact</a
                   >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z"
-                      fill="#FCFCFD"
-                    />
-                  </svg>
-                </button>
               </div>
-            </div>
+              <div class="create__profile">
+                  <p>CREATE YOUR PROFILE</p>
+                  <div class="send__email">
+                      <input type="text" placeholder="Enter your email" />
+                      <button>
+                          <svg
+                              width="14"
+                              height="9"
+                              viewBox="0 0 14 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                          >
+                              <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M9.09095 0.265207C9.49677 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49678 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L1 5.49997C0.447718 5.49997 3.05054e-06 5.05225 3.0279e-06 4.49997C3.00525e-06 3.94768 0.447718 3.49997 1 3.49997L10.716 3.49997L9.03443 1.67829C8.65983 1.27247 8.68513 0.639813 9.09095 0.265207Z"
+                                  fill="#FCFCFD"
+                              />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
           </div>
-        </div>
-        <p class="footer__copyright">All rights reserved</p>
+          <hr />
+          <p class="reserved">All rights reserved</p>
       </div>
-    </footer>
+  </footer>
   </body>
 </html>

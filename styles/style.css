@@ -547,6 +547,10 @@
     cursor: pointer;
 }
 
+.ticket__top a{
+    margin-left: auto;
+}
+
 .ticket-section img {
     width: 1280px;
     height: 700px;
