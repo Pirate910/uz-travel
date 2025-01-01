@@ -667,3 +667,8 @@
     margin-bottom: 32px;
     margin-top: 24px;
 }
+
+.highlight {
+    background-color: yellow;
+    transition: background-color 0.5s ease;
+  }
