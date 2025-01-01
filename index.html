@@ -27,9 +27,37 @@
         <script src="./js/accomodation-swiper.js" defer></script>
         <script src="./js/dest-cards.js" defer></script>
         <script src="./js/introduction-search.js" defer></script>
+        <script src="./js/best-place-popup.js" defer></script>
+        <link rel="stylesheet" href="./styles/destination.css">
         <title>UzTravel Guide</title>
     </head>
     <body>
+
+        <div id="bestPlacePopup" class="destination-popup">
+            <div class="destination-popup__container container">
+                <button onclick="
+                    
+                    const closePopup = document.querySelector('.destination-popup')
+                    closePopup.style.right = '100%'
+
+                    " class="destination-popup__close-btn">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.9997 33.3333C27.3635 33.3333 33.333 27.3637 33.333 19.9999C33.333 12.6361 27.3635 6.66659 19.9997 6.66659C12.6359 6.66659 6.66634 12.6361 6.66634 19.9999C6.66634 27.3637 12.6359 33.3333 19.9997 33.3333ZM19.9997 36.6666C29.2044 36.6666 36.6663 29.2047 36.6663 19.9999C36.6663 10.7952 29.2044 3.33325 19.9997 3.33325C10.7949 3.33325 3.33301 10.7952 3.33301 19.9999C3.33301 29.2047 10.7949 36.6666 19.9997 36.6666Z" fill="#05DBF3"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.8212 13.8214C14.472 13.1705 15.5273 13.1705 16.1782 13.8214L19.9997 17.6429L23.8212 13.8214C24.472 13.1705 25.5273 13.1705 26.1782 13.8214C26.8291 14.4723 26.8291 15.5276 26.1782 16.1784L22.3567 19.9999L26.1782 23.8214C26.8291 24.4723 26.8291 25.5276 26.1782 26.1784C25.5273 26.8293 24.472 26.8293 23.8212 26.1784L19.9997 22.3569L16.1782 26.1784C15.5273 26.8293 14.472 26.8293 13.8212 26.1784C13.1703 25.5276 13.1703 24.4723 13.8212 23.8214L17.6427 19.9999L13.8212 16.1784C13.1703 15.5276 13.1703 14.4723 13.8212 13.8214Z" fill="#05DBF3"/>
+                      </svg>
+                </button>
+                <div class="destination-popup-map">
+                    <div class="destination-popup-places">
+                        <iframe data-filter="bukhara" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98121.96811677901!2d64.26708230424364!3d39.77756419745991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f50060e65993cd5%3A0xc87beaf40e48e767!2z0JHRg9GF0LDRgNCwLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1735663957644!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="samarkand" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98316.68659832998!2d66.88531498624128!3d39.640791313430455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d191960077df7%3A0x487636d9d13f2f57!2z0KHQsNC80LDRgNC60LDQvdC0LCDQodCw0LzQsNGA0LrQsNC90LTRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1735663885089!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="khiva" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47892.86430001329!2d60.30871791956098!3d41.38920356619267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfa413ffe48cf9%3A0xcd75f47f7a6dc0cd!2z0KXQuNCy0LAsINCl0L7RgNC10LfQvNGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1735663917457!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe data-filter="tashkent" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95942.48020528293!2d69.19679470065093!3d41.2826969521322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YIsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1735658922074!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <header>
             <div class="container">
                 <div class="log">
@@ -1026,91 +1054,150 @@
                 </div>
             </div>
 
-            <div class="d-sw">
+            <div class="d-sw container">
                 <div class="destinations__cards swiper-wrapper">
-
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/hilton.png" alt="hilton" />
-                        <a href="#destination__cards" class="destinations__cards-item-name">Tashkent</a>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="tashkent">Tashkent</a>
                         <p class="destinations__cards-item-price">
                             From <span>$500</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/registon.png" alt="registon" />
-                        <p class="destinations__cards-item-name">Samarkand</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="samarkand">Samarkand</a>
                         <p class="destinations__cards-item-price">
                             From <span>$400</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/ark.png" alt="ark" />
-                        <p class="destinations__cards-item-name">Bukhara</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="bukhara">Bukhara</a>
                         <p class="destinations__cards-item-price">
                             From <span>$300</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/khiva.jpg" alt="Khiva" />
-                        <p class="destinations__cards-item-name">Khiva</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="khiva">Khiva</a>
                         <p class="destinations__cards-item-price">
                             From <span>$350</span> per day
                         </p>
                     </div>
 
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/hilton.png" alt="hilton" />
-                        <p class="destinations__cards-item-name">Tashkent</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="tashkent">Tashkent</a>
                         <p class="destinations__cards-item-price">
                             From <span>$500</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/registon.png" alt="registon" />
-                        <p class="destinations__cards-item-name">Samarkand</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="samarkand">Samarkand</a>
                         <p class="destinations__cards-item-price">
                             From <span>$400</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/ark.png" alt="ark" />
-                        <p class="destinations__cards-item-name">Bukhara</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="bukhara">Bukhara</a>
                         <p class="destinations__cards-item-price">
                             From <span>$300</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/khiva.jpg" alt="Khiva" />
-                        <p class="destinations__cards-item-name">Khiva</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="khiva">Khiva</a>
                         <p class="destinations__cards-item-price">
                             From <span>$350</span> per day
                         </p>
                     </div>
 
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/hilton.png" alt="hilton" />
-                        <p class="destinations__cards-item-name">Tashkent</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="tashkent">Tashkent</a>
                         <p class="destinations__cards-item-price">
                             From <span>$500</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/registon.png" alt="registon" />
-                        <p class="destinations__cards-item-name">Samarkand</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="samarkand">Samarkand</a>
                         <p class="destinations__cards-item-price">
                             From <span>$400</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/ark.png" alt="ark" />
-                        <p class="destinations__cards-item-name">Bukhara</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="bukhara">Bukhara</a>
                         <p class="destinations__cards-item-price">
                             From <span>$300</span> per day
                         </p>
                     </div>
-                    <div class="destinations__cards-item swiper-slide">
+                    <div id="bestPlaceCard" class="destinations__cards-item swiper-slide">
                         <img src="./assets/khiva.jpg" alt="Khiva" />
-                        <p class="destinations__cards-item-name">Khiva</p>
+                        <a onclick="
+
+                        const bestPlacePopup = document.querySelector('#bestPlacePopup')
+                        bestPlacePopup.style.right = '0'
+
+                        " class="destinations__cards-item-name" data-filter="khiva">Khiva</a>
                         <p class="destinations__cards-item-price">
                             From <span>$350</span> per day
                         </p>

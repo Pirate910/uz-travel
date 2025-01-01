@@ -461,6 +461,10 @@
     padding: 48px 0;
 }
 
+.d-sw{
+    overflow: hidden;
+}
+
 .destinations__cards-item {
     box-shadow: 0px 4px 10px 0px #00000040;
     border-radius: 24px;

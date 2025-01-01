@@ -1,7 +1,7 @@
 const destSwiper = new Swiper(".d-sw", {
 
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 32,
 
     // Отключите управление стилями Swiper, если это возможно
