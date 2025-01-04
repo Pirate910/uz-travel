@@ -165,6 +165,13 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 16px 32px;
+    padding: 60px 0;
+}
+
+.accomodation__wrapper{
+    display: flex;
+    gap: 16px;
+    padding: 60px 0;
 }
 
 .notification__bell::after {
@@ -319,3 +326,4 @@ footer hr {
 .footer__logo {
     margin-top: 50px;
 }
+
