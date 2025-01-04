@@ -164,13 +164,20 @@ a{
 .wishlist-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 32px;
+    gap: 16px 20px;
     padding: 60px 0;
 }
 
 .accomodation__wrapper{
     display: flex;
     gap: 16px;
+    padding: 60px 0;
+}
+
+.adventure__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 20px;
     padding: 60px 0;
 }
 

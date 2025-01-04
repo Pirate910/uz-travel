@@ -62,7 +62,34 @@ function renderFav () {
                 alert("Карточка уже существует в savedData")
             }
         })
-})
+    })
+
+    document
+    .querySelectorAll(".adventures__cards-wrapper .adventures__card-item-img button")
+    .forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            const card = document.querySelectorAll(".adventures__cards-wrapper .adventures__card-item")[index]
+            
+            const cardCloneAdventure = card.cloneNode(true)
+            const imgWishAdventure = cardCloneAdventure.querySelector("img")
+
+            if(imgWishAdventure){
+                const imgWishAdventureSrc = imgWishAdventure.src
+                imgWishAdventure.setAttribute("src", imgWishAdventureSrc)
+            }
+
+            let savedDataAdventure = JSON.parse(localStorage.getItem("adventure-wishlist")) || []
+            const cardHTMLAdventure = cardCloneAdventure.outerHTML
+
+            if(!savedDataAdventure.includes(cardHTMLAdventure)){
+                savedDataAdventure.push(cardHTMLAdventure)
+                localStorage.setItem("adventure-wishlist", JSON.stringify(savedDataAdventure))
+            }else{
+                alert("Карточка уже существует в savedDataAdventure")
+            }
+
+        })
+    })
 
 }
 
