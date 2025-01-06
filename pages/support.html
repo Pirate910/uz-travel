@@ -13,17 +13,24 @@
         <link rel="stylesheet" href="../general/general.css" />
         <link rel="stylesheet" href="../styles/support.css" />
         <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
-
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+         />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="../js/swiper/support-swiper.js" defer></script>
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="log">
-                    <a class="logo__section" href="/"><img src="./assets/logo.png" alt="logo" />
-                        <div class="logo__name">
-                            <p>UzTravel</p>
-                            <p>Guide</p>
-                        </div>
+                    <a class="logo__section" href="/">
+                        <img class="nav__logo-logo" src="../assets/logo.png" alt="logo" />
+                        <img
+                        class="nav__logo-slogan"
+                        src="../assets/Frame 1261154401.png"
+                        alt=""
+                        />
                     </a>
                     <div class="navigation__menu">
                         <nav>
@@ -33,28 +40,28 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="./uztravel/tripplan.html"
+                                        href="../uztravel/tripplan.html"
                                         target="_blank"
                                         >Plan to trip</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="./pages/destination.html"
+                                        href="./destination.html"
                                         target="_blank"
                                         >Destination</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="./pages/accomodation.html"
+                                        href="./accomodation.html"
                                         target="_blank"
                                         >Accomodation</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="./uztravel/index.html"
+                                        href="../uztravel/index.html"
                                         target="_blank"
                                         >Food</a
                                     >
@@ -95,7 +102,7 @@
                         </nav>
                     </div>
                     <div class="wishlist">
-                        <a href="./pages/wishlist.html" target="_blank"
+                        <a href="./wishlist.html" target="_blank"
                             >Wishlist</a
                         >
                         <div class="notification__bell">
@@ -113,12 +120,13 @@
                             </svg>
                         </div>
                         <div class="profile__img">
-                            <img src="./assets/profile__img.png" alt="img" />
+                            <a href="./profile.html"><img src="../assets/profile__img.png" alt="img" /></a>  
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+
 
         <section class="support__section">
             <div class="container">
@@ -204,111 +212,202 @@
                             </button>
                         </div>
                     </div>
-                    <div class="travel__tips-cards">
-                        <div class="travel__tips-card-item">
-                            <div class="card__item-img">
-                                <img
-                                    src="../assets/packing.png"
-                                    alt="packing"
-                                />
-                                <button class="item__like">
-                                    <svg
-                                        width="20"
-                                        height="16"
-                                        viewBox="0 0 20 16"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
-                                            fill="#05DBF3"
-                                        />
-                                    </svg>
-                                </button>
-                                <a class="item__readmore" href="">
-                                    Read More
-                                </a>
+
+                    <div class="travel__tips-swiper swiper">
+                        <div class="travel__tips-cards swiper-wrapper">
+                            <div class="travel__tips-card-item swiper-slide">
+                                <div class="card__item-img">
+                                    <img
+                                        src="../assets/packing.png"
+                                        alt="packing"
+                                    />
+                                    <button class="item__like">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5767 5.76422C10.2542 6.07365 9.74511 6.07365 9.42267 5.76422L8.84567 5.2105C8.17032 4.56239 7.25795 4.16667 6.24967 4.16667C4.17861 4.16667 2.49967 5.8456 2.49967 7.91667C2.49967 9.90219 3.5745 11.5417 5.12614 12.8888C6.67911 14.237 8.53584 15.1312 9.64521 15.5876C9.87717 15.683 10.1222 15.683 10.3541 15.5876C11.4635 15.1312 13.3202 14.237 14.8732 12.8888C16.4249 11.5417 17.4997 9.90218 17.4997 7.91667C17.4997 5.8456 15.8207 4.16667 13.7497 4.16667C12.7414 4.16667 11.829 4.56239 11.1537 5.2105L10.5767 5.76422ZM9.99967 4.00798C9.02643 3.074 7.70508 2.5 6.24967 2.5C3.25813 2.5 0.833008 4.92512 0.833008 7.91667C0.833008 13.2235 6.64163 16.1542 9.01117 17.1289C9.64931 17.3914 10.35 17.3914 10.9882 17.1289C13.3577 16.1542 19.1663 13.2235 19.1663 7.91667C19.1663 4.92512 16.7412 2.5 13.7497 2.5C12.2943 2.5 10.9729 3.074 9.99967 4.00798Z" fill="#B1B5C4"/>
+                                        </svg>
+                                    </button>
+                                    <a class="item__readmore" href="">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="card__item-desc">
+                                    <p class="descr__name">Packing Essentials</p>
+                                    <p class="descr__text">
+                                        Local Climate: Pack weather-appropriate
+                                        <br />
+                                        clothing. Important Documents: Passport,
+                                        visa, travel insurance, and emergency
+                                        contacts.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card__item-desc">
-                                <p class="descr__name">Packing Essentials</p>
-                                <p class="descr__text">
-                                    Local Climate: Pack weather-appropriate
-                                    <br />
-                                    clothing. Important Documents: Passport,
-                                    visa, travel insurance, and emergency
-                                    contacts.
-                                </p>
+                            <div class="travel__tips-card-item swiper-slide">
+                                <div class="card__item-img">
+                                    <img
+                                        src="../assets/transport.png"
+                                        alt="transparent"
+                                    />
+                                    <button class="item__like">
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5767 3.76422C10.2542 4.07365 9.74511 4.07365 9.42267 3.76422L8.84567 3.2105C8.17032 2.56239 7.25795 2.16667 6.24967 2.16667C4.17861 2.16667 2.49967 3.8456 2.49967 5.91667C2.49967 7.90219 3.5745 9.54171 5.12614 10.8888C6.67911 12.237 8.53584 13.1312 9.64521 13.5876C9.87717 13.683 10.1222 13.683 10.3541 13.5876C11.4635 13.1312 13.3202 12.237 14.8732 10.8888C16.4249 9.54171 17.4997 7.90218 17.4997 5.91667C17.4997 3.8456 15.8207 2.16667 13.7497 2.16667C12.7414 2.16667 11.829 2.56239 11.1537 3.2105L10.5767 3.76422ZM9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a class="item__readmore" href="">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="card__item-desc">
+                                    <p class="descr__name">Transportation Tips</p>
+                                    <p class="descr__text">
+                                        Tickets in Advance: Book train or plane
+                                        tickets early to secure the best prices.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="travel__tips-card-item">
-                            <div class="card__item-img">
-                                <img
-                                    src="../assets/transport.png"
-                                    alt="transparent"
-                                />
-                                <button class="item__like">
-                                    <svg
-                                        width="20"
-                                        height="16"
-                                        viewBox="0 0 20 16"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M10.5767 3.76422C10.2542 4.07365 9.74511 4.07365 9.42267 3.76422L8.84567 3.2105C8.17032 2.56239 7.25795 2.16667 6.24967 2.16667C4.17861 2.16667 2.49967 3.8456 2.49967 5.91667C2.49967 7.90219 3.5745 9.54171 5.12614 10.8888C6.67911 12.237 8.53584 13.1312 9.64521 13.5876C9.87717 13.683 10.1222 13.683 10.3541 13.5876C11.4635 13.1312 13.3202 12.237 14.8732 10.8888C16.4249 9.54171 17.4997 7.90218 17.4997 5.91667C17.4997 3.8456 15.8207 2.16667 13.7497 2.16667C12.7414 2.16667 11.829 2.56239 11.1537 3.2105L10.5767 3.76422ZM9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
-                                            fill="#B1B5C4"
-                                        />
-                                    </svg>
-                                </button>
-                                <a class="item__readmore" href="">
-                                    Read More
-                                </a>
+                            <div class="travel__tips-card-item swiper-slide">
+                                <div class="card__item-img">
+                                    <img
+                                        src="../assets/emergency.png"
+                                        alt="emergency"
+                                    />
+                                    <button class="item__like">
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5767 3.76422C10.2542 4.07365 9.74511 4.07365 9.42267 3.76422L8.84567 3.2105C8.17032 2.56239 7.25795 2.16667 6.24967 2.16667C4.17861 2.16667 2.49967 3.8456 2.49967 5.91667C2.49967 7.90219 3.5745 9.54171 5.12614 10.8888C6.67911 12.237 8.53584 13.1312 9.64521 13.5876C9.87717 13.683 10.1222 13.683 10.3541 13.5876C11.4635 13.1312 13.3202 12.237 14.8732 10.8888C16.4249 9.54171 17.4997 7.90218 17.4997 5.91667C17.4997 3.8456 15.8207 2.16667 13.7497 2.16667C12.7414 2.16667 11.829 2.56239 11.1537 3.2105L10.5767 3.76422ZM9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a class="item__readmore" href="">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="card__item-desc">
+                                    <p class="descr__name">Emergency Contacts</p>
+                                    <p class="descr__text">
+                                        Police, medical services, and fire
+                                        departments.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card__item-desc">
-                                <p class="descr__name">Transportation Tips</p>
-                                <p class="descr__text">
-                                    Tickets in Advance: Book train or plane
-                                    tickets early to secure the best prices.
-                                </p>
+
+                            <div class="travel__tips-card-item swiper-slide">
+                                <div class="card__item-img">
+                                    <img
+                                        src="../assets/packing.png"
+                                        alt="packing"
+                                    />
+                                    <button class="item__like">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5767 5.76422C10.2542 6.07365 9.74511 6.07365 9.42267 5.76422L8.84567 5.2105C8.17032 4.56239 7.25795 4.16667 6.24967 4.16667C4.17861 4.16667 2.49967 5.8456 2.49967 7.91667C2.49967 9.90219 3.5745 11.5417 5.12614 12.8888C6.67911 14.237 8.53584 15.1312 9.64521 15.5876C9.87717 15.683 10.1222 15.683 10.3541 15.5876C11.4635 15.1312 13.3202 14.237 14.8732 12.8888C16.4249 11.5417 17.4997 9.90218 17.4997 7.91667C17.4997 5.8456 15.8207 4.16667 13.7497 4.16667C12.7414 4.16667 11.829 4.56239 11.1537 5.2105L10.5767 5.76422ZM9.99967 4.00798C9.02643 3.074 7.70508 2.5 6.24967 2.5C3.25813 2.5 0.833008 4.92512 0.833008 7.91667C0.833008 13.2235 6.64163 16.1542 9.01117 17.1289C9.64931 17.3914 10.35 17.3914 10.9882 17.1289C13.3577 16.1542 19.1663 13.2235 19.1663 7.91667C19.1663 4.92512 16.7412 2.5 13.7497 2.5C12.2943 2.5 10.9729 3.074 9.99967 4.00798Z" fill="#B1B5C4"/>
+                                          </svg>
+                                    </button>
+                                    <a class="item__readmore" href="">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="card__item-desc">
+                                    <p class="descr__name">Packing Essentials</p>
+                                    <p class="descr__text">
+                                        Local Climate: Pack weather-appropriate
+                                        <br />
+                                        clothing. Important Documents: Passport,
+                                        visa, travel insurance, and emergency
+                                        contacts.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="travel__tips-card-item">
-                            <div class="card__item-img">
-                                <img
-                                    src="../assets/emergency.png"
-                                    alt="emergency"
-                                />
-                                <button class="item__like">
-                                    <svg
-                                        width="20"
-                                        height="16"
-                                        viewBox="0 0 20 16"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            fill-rule="evenodd"
-                                            clip-rule="evenodd"
-                                            d="M10.5767 3.76422C10.2542 4.07365 9.74511 4.07365 9.42267 3.76422L8.84567 3.2105C8.17032 2.56239 7.25795 2.16667 6.24967 2.16667C4.17861 2.16667 2.49967 3.8456 2.49967 5.91667C2.49967 7.90219 3.5745 9.54171 5.12614 10.8888C6.67911 12.237 8.53584 13.1312 9.64521 13.5876C9.87717 13.683 10.1222 13.683 10.3541 13.5876C11.4635 13.1312 13.3202 12.237 14.8732 10.8888C16.4249 9.54171 17.4997 7.90218 17.4997 5.91667C17.4997 3.8456 15.8207 2.16667 13.7497 2.16667C12.7414 2.16667 11.829 2.56239 11.1537 3.2105L10.5767 3.76422ZM9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
-                                            fill="#B1B5C4"
-                                        />
-                                    </svg>
-                                </button>
-                                <a class="item__readmore" href="">
-                                    Read More
-                                </a>
+                            <div class="travel__tips-card-item swiper-slide">
+                                <div class="card__item-img">
+                                    <img
+                                        src="../assets/transport.png"
+                                        alt="transparent"
+                                    />
+                                    <button class="item__like">
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5767 3.76422C10.2542 4.07365 9.74511 4.07365 9.42267 3.76422L8.84567 3.2105C8.17032 2.56239 7.25795 2.16667 6.24967 2.16667C4.17861 2.16667 2.49967 3.8456 2.49967 5.91667C2.49967 7.90219 3.5745 9.54171 5.12614 10.8888C6.67911 12.237 8.53584 13.1312 9.64521 13.5876C9.87717 13.683 10.1222 13.683 10.3541 13.5876C11.4635 13.1312 13.3202 12.237 14.8732 10.8888C16.4249 9.54171 17.4997 7.90218 17.4997 5.91667C17.4997 3.8456 15.8207 2.16667 13.7497 2.16667C12.7414 2.16667 11.829 2.56239 11.1537 3.2105L10.5767 3.76422ZM9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a class="item__readmore" href="">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="card__item-desc">
+                                    <p class="descr__name">Transportation Tips</p>
+                                    <p class="descr__text">
+                                        Tickets in Advance: Book train or plane
+                                        tickets early to secure the best prices.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="card__item-desc">
-                                <p class="descr__name">Emergency Contacts</p>
-                                <p class="descr__text">
-                                    Police, medical services, and fire
-                                    departments.
-                                </p>
+                            <div class="travel__tips-card-item swiper-slide">
+                                <div class="card__item-img">
+                                    <img
+                                        src="../assets/emergency.png"
+                                        alt="emergency"
+                                    />
+                                    <button class="item__like">
+                                        <svg
+                                            width="20"
+                                            height="16"
+                                            viewBox="0 0 20 16"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M10.5767 3.76422C10.2542 4.07365 9.74511 4.07365 9.42267 3.76422L8.84567 3.2105C8.17032 2.56239 7.25795 2.16667 6.24967 2.16667C4.17861 2.16667 2.49967 3.8456 2.49967 5.91667C2.49967 7.90219 3.5745 9.54171 5.12614 10.8888C6.67911 12.237 8.53584 13.1312 9.64521 13.5876C9.87717 13.683 10.1222 13.683 10.3541 13.5876C11.4635 13.1312 13.3202 12.237 14.8732 10.8888C16.4249 9.54171 17.4997 7.90218 17.4997 5.91667C17.4997 3.8456 15.8207 2.16667 13.7497 2.16667C12.7414 2.16667 11.829 2.56239 11.1537 3.2105L10.5767 3.76422ZM9.99967 2.00798C9.02643 1.074 7.70508 0.5 6.24967 0.5C3.25813 0.5 0.833008 2.92512 0.833008 5.91667C0.833008 11.2235 6.64163 14.1542 9.01117 15.1289C9.64931 15.3914 10.35 15.3914 10.9882 15.1289C13.3577 14.1542 19.1663 11.2235 19.1663 5.91667C19.1663 2.92512 16.7412 0.5 13.7497 0.5C12.2943 0.5 10.9729 1.074 9.99967 2.00798Z"
+                                                fill="#B1B5C4"
+                                            />
+                                        </svg>
+                                    </button>
+                                    <a class="item__readmore" href="">
+                                        Read More
+                                    </a>
+                                </div>
+                                <div class="card__item-desc">
+                                    <p class="descr__name">Emergency Contacts</p>
+                                    <p class="descr__text">
+                                        Police, medical services, and fire
+                                        departments.
+                                    </p>
+                                </div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
