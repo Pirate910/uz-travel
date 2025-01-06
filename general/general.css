@@ -165,20 +165,54 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 16px 20px;
-    padding: 60px 0;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.wishlist-title-container{
+    padding: 50px 0 15px 0;
+}
+
+.wishlist-main-title{
+    color: var(--Neutrals-2, #23262F);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -0.96px;
+
+}
+
+.wishlist-sub-title{
+    color: var(--Neutrals-4, #777E90);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    letter-spacing: -0.2px;
 }
 
 .accomodation__wrapper{
     display: flex;
-    gap: 16px;
-    padding: 60px 0;
+    justify-content: center;
+    gap: 16px 20px;
+    flex-wrap: wrap;
+    padding: 50px 0;
 }
 
 .adventure__wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 16px 20px;
-    padding: 60px 0;
+    padding: 50px 0;
+}
+
+.hide{
+    background: none;
+    border: none;
 }
 
 .notification__bell::after {
