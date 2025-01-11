@@ -3,6 +3,7 @@ const destSwiper = new Swiper(".adventures__cards", {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 32,
+    freeMode: true,  
 
     // Отключите управление стилями Swiper, если это возможно
     autoHeight: false,

@@ -58,12 +58,6 @@
             </div>
         </div>
 
-        <div id="mobileNavBar" class="mobile-nav-bar">
-            <div class="mobile-nav-bar__container container">
-                <button class="mobile-nav__close-btn"><img src="./assets/icons/nav-bar-btn.svg" alt=""></button>
-            </div>
-        </div>
-
         <header>
             <div class="container">
                 <div class="log">
@@ -76,8 +70,9 @@
                         />
                         <img class="mobile-nav-logo" src="./assets/icons/Frame 1261154401.png" alt="">
                     </a>
+
                     <div class="navigation__menu">
-                        <nav>
+                        <nav class="navigation__menu-nav">
                             <ul>
                                 <li>
                                     <a href="#">About</a>
@@ -144,6 +139,38 @@
                                 </select>
                             </div>
                         </nav>
+                        <nav class="mobile-nav-bar__navigation">
+                            <button
+
+                            onclick="
+
+                            const mobileNavMobile = document.querySelector('.mobile-nav-bar__navigation')
+                            mobileNavMobile.style.transform = 'translateX(-100%)'
+
+                            "
+
+                             class="mobile-nav-bar__close-btn"></button>
+                            <ul class="mobile-nav-bar__nav-list">
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="#" class="mobile-nav-bar__nav-link">About</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a href="./uztravel/tripplan.html" class="mobile-nav-bar__nav-link">Plan to trip</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./pages/destination.html" class="mobile-nav-bar__nav-link">Destination</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./pages/accomodation.html" class="mobile-nav-bar__nav-link">Accomodation</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./uztravel/index.html" class="mobile-nav-bar__nav-link">Food</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./pages/wishlist.html" class="mobile-nav-bar__nav-link">Wishlist</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="wishlist">
                         <a class="wishlist-btn" href="./pages/wishlist.html" target="_blank"
@@ -168,7 +195,19 @@
                         </div>
                     </div>
 
-                    <button class="mobile-nav__open-btn"class="nav-bar__open-btn"><img src="./assets/icons/nav-bar-btn.svg" alt=""></button>
+                    <button
+
+                    onclick="
+
+                    const mobileNavBar = document.querySelector('.mobile-nav-bar__navigation')
+
+                    mobileNavBar.style.transform = 'translateX(0%)'
+
+                    "
+
+                    class="mobile-nav__open-btn"class="nav-bar__open-btn">
+                        <img src="./assets/icons/nav-bar-btn.svg" alt="">
+                    </button>
                 </div>
             </div>
         </header>
@@ -956,6 +995,7 @@
         </section>
 
         <section class="destinations__section">
+
             <svg
                 class="destinationsamolyot"
                 width="157"
@@ -1413,10 +1453,7 @@
                 <div class="footer__box">
                     <div class="logo__section footer__logo">
                         <img src="./assets/logo.png" alt="logo" />
-                        <div class="logo__name">
-                            <p>UzTravel</p>
-                            <p>Guide</p>
-                        </div>
+                        <img src="./assets/Frame 1261154401.png" alt="">
                     </div>
                     <div class="information">
                         <p>Information</p>
@@ -1466,6 +1503,7 @@
                 <p class="reserved">All rights reserved</p>
             </div>
         </footer>
+
         <script src="./general/general.js"></script>
         <script src="./js/index.js"></script>
     </body>

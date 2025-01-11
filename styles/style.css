@@ -976,6 +976,7 @@
     
     .accommodation__desc {
         margin-top: 20px;
+        margin-bottom: 50px;
         text-align: center;
     }
     
@@ -983,6 +984,9 @@
         display: flex;
         margin-top: 50px;
         margin-bottom: 25px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .accomodation__cards-item {
@@ -1002,7 +1006,6 @@
     }
     
     .accomodation__image button {
-
         background-color: #fcfcfd;
     }
     

@@ -4,6 +4,8 @@ const accomodationSwiper = new Swiper(".accomodation__cards-swiper", {
     slidesPerView: 3,
     spaceBetween: 32,
 
+    freeMode: true,  
+
     breakpoints: {
         300: {
             slidesPerView: 1,

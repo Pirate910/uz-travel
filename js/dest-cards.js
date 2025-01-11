@@ -6,6 +6,7 @@ const destSwiper = new Swiper(".d-sw", {
 
     // Отключите управление стилями Swiper, если это возможно
     autoHeight: false,
+    freeMode: true,  
 
     // If we need pagination
     pagination: {
