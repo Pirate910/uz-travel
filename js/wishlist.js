@@ -65,6 +65,10 @@ function loadData() {
             })
         })
 
+        if(discoverContainer.innerHTML == ""){
+            return discoverContainer.innerHTML = 'Empty localhost'
+        }
+
     } 
 
     function startRenderAccomodation(){
@@ -94,6 +98,10 @@ function loadData() {
             })
         })
 
+        if(wishContainer.innerHTML == ""){
+            return wishContainer.innerHTML = 'Empty localhost'
+        }
+
     }
 
     function startRenderAdventure(){
@@ -114,6 +122,10 @@ function loadData() {
                 startRenderAdventure()
             })
         });
+
+        if(adventureContainer.innerHTML == ""){
+            return adventureContainer.innerHTML = 'Empty localhost'
+        }
 
     }
 

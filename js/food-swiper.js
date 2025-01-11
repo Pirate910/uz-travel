@@ -5,6 +5,13 @@ const swiper = new Swiper('.swiper', {
 
     // Отключите управление стилями Swiper, если это возможно
     autoHeight: false,
+    freeMode: true,  
+
+    breakpoints: {
+      300:{
+          slidesPerView: 1,
+      },
+    },
 
     // If we need pagination
     pagination: {

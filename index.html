@@ -58,6 +58,12 @@
             </div>
         </div>
 
+        <div id="mobileNavBar" class="mobile-nav-bar">
+            <div class="mobile-nav-bar__container container">
+                <button class="mobile-nav__close-btn"><img src="./assets/icons/nav-bar-btn.svg" alt=""></button>
+            </div>
+        </div>
+
         <header>
             <div class="container">
                 <div class="log">
@@ -68,6 +74,7 @@
                         src="./assets/Frame 1261154401.png"
                         alt=""
                         />
+                        <img class="mobile-nav-logo" src="./assets/icons/Frame 1261154401.png" alt="">
                     </a>
                     <div class="navigation__menu">
                         <nav>
@@ -139,7 +146,7 @@
                         </nav>
                     </div>
                     <div class="wishlist">
-                        <a href="./pages/wishlist.html" target="_blank"
+                        <a class="wishlist-btn" href="./pages/wishlist.html" target="_blank"
                             >Wishlist</a
                         >
                         <div class="notification__bell">
@@ -157,9 +164,11 @@
                             </svg>
                         </div>
                         <div class="profile__img">
-                            <a href="./pages/profile.html"><img src="./assets/profile__img.png" alt="img" /></a>  
+                            <a href="./pages/profile.html"><img src="./assets/icons/profile__img.jpg" alt="img" /></a>  
                         </div>
                     </div>
+
+                    <button class="mobile-nav__open-btn"class="nav-bar__open-btn"><img src="./assets/icons/nav-bar-btn.svg" alt=""></button>
                 </div>
             </div>
         </header>
@@ -200,6 +209,12 @@
                         </svg>
                     </button>
                 </div>
+                <div class="mobile-search-main-page">
+                    <h2 class="mobile-search__title">Search your interest</h2>
+                    <div class="mobile-search__search-place">
+                        <input type="text" class="mobile-search__input" placeholder="Search">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -230,6 +245,11 @@
                     </linearGradient>
                 </defs>
             </svg>
+
+            <div class="discover-background">
+                <img class="discover-background__plane" src="./assets/icons/plane-dec-2.svg" alt="">
+                <img class="discover-background__location" src="./assets/icons/plane-dec.svg" alt="">
+            </div>
 
             <div class="container">
                 <div class="discover">
@@ -907,7 +927,7 @@
         </section>
 
         <section class="guideline__section">
-            <div class="container">
+            <div class="guideline__container container">
                 <div class="guideline">
                     <p>TAKE A TOUR</p>
                     <h3>
@@ -917,69 +937,21 @@
                     <span>Unforgettable Adventures Await You.</span>
                     <ul>
                         <li>
-                            <span>
-                                <svg
-                                    width="11"
-                                    height="8"
-                                    viewBox="0 0 11 8"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 4L4 7L10 1"
-                                        stroke="#FCFCFD"
-                                        stroke-width="2"
-                                        stroke-miterlimit="10"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </span>
-                            Best things to do
+                            <img src="./assets/icons/check.svg" alt="">
+                            <p>Best things to do</p>
                         </li>
                         <li>
-                            <span>
-                                <svg
-                                    width="11"
-                                    height="8"
-                                    viewBox="0 0 11 8"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 4L4 7L10 1"
-                                        stroke="#FCFCFD"
-                                        stroke-width="2"
-                                        stroke-miterlimit="10"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg> </span
-                            >Things to know
+                            <img src="./assets/icons/check.svg" alt="">
+                            <p>Things to know</p>
                         </li>
                         <li>
-                            <span>
-                                <svg
-                                    width="11"
-                                    height="8"
-                                    viewBox="0 0 11 8"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M1 4L4 7L10 1"
-                                        stroke="#FCFCFD"
-                                        stroke-width="2"
-                                        stroke-miterlimit="10"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg> </span
-                            >Best time to visit
+                            <img src="./assets/icons/check.svg" alt="">
+                            <p>Best time to visit</p>
                         </li>
                     </ul>
                     <a href="./uztravel/tripplan.html"><button>Explore more</button></a>
                 </div>
+                <img class="guideline__background" src="./assets/background/plane-img.png" alt="">
             </div>
         </section>
 

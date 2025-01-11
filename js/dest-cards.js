@@ -11,6 +11,12 @@ const destSwiper = new Swiper(".d-sw", {
     pagination: {
       el: '.swiper-pagination',
     },
+
+    breakpoints : {
+      300: {
+        slidesPerView: 1,
+      },
+    },
   
     // Navigation arrows
     navigation: {
