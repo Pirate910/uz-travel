@@ -107,109 +107,157 @@
       </div>
     </div>
     <header>
-      <div class="container">
-        <div class="log">
-            <a class="logo__section" href="/">
-                <img class="nav__logo-logo" src="../assets/logo.png" alt="logo" />
-                <img
-                class="nav__logo-slogan"
-                src="../assets/Frame 1261154401.png"
-                alt=""
-                />
-            </a>
-            <div class="navigation__menu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-                        <li>
-                            <a
-                                href="./tripplan.html"
-                                target="_blank"
-                                >Plan to trip</a
+        <div class="container">
+            <div class="log">
+                <a class="logo__section" href="/">
+                    <img class="nav__logo-logo" src="../assets/logo.png" alt="logo" />
+                    <img
+                    class="nav__logo-slogan"
+                    src="../assets/Frame 1261154401.png"
+                    alt=""
+                    />
+                    <img class="mobile-nav-logo" src="../assets/icons/Frame 1261154401.png" alt="">
+                </a>
+
+                <div class="navigation__menu">
+                    <nav class="navigation__menu-nav">
+                        <ul>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="./uztravel/tripplan.html"
+                                    target="_blank"
+                                    >Plan to trip</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../pages/destination.html"
+                                    target="_blank"
+                                    >Destination</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../pages/accomodation.html"
+                                    target="_blank"
+                                    >Accomodation</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../uztravel/index.html"
+                                    target="_blank"
+                                    >Food</a
+                                >
+                            </li>
+                        </ul>
+                        <div class="language__section">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
                             >
-                        </li>
-                        <li>
-                            <a
-                                href="../pages/destination.html"
-                                target="_blank"
-                                >Destination</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../pages/accomodation.html"
-                                target="_blank"
-                                >Accomodation</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="../uztravel/index.html"
-                                target="_blank"
-                                >Food</a
-                            >
-                        </li>
-                    </ul>
-                    <div class="language__section">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M8.00001 13.3333C10.9455 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9455 2.66659 8.00001 2.66659C5.05449 2.66659 2.66668 5.0544 2.66668 7.99992C2.66668 10.9454 5.05449 13.3333 8.00001 13.3333ZM8.00001 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00001 1.33325C4.31811 1.33325 1.33334 4.31802 1.33334 7.99992C1.33334 11.6818 4.31811 14.6666 8.00001 14.6666Z"
+                                    fill="#FCFCFD"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M9.16444 12.1177C9.65691 11.1327 9.99999 9.67876 9.99999 7.99992C9.99999 6.32108 9.65691 4.8671 9.16444 3.88216C8.6321 2.81747 8.14336 2.66659 7.99999 2.66659C7.85662 2.66659 7.36788 2.81747 6.83554 3.88216C6.34307 4.8671 5.99999 6.32108 5.99999 7.99992C5.99999 9.67876 6.34307 11.1327 6.83554 12.1177C7.36788 13.1824 7.85662 13.3333 7.99999 13.3333C8.14336 13.3333 8.6321 13.1824 9.16444 12.1177ZM7.99999 14.6666C9.84094 14.6666 11.3333 11.6818 11.3333 7.99992C11.3333 4.31802 9.84094 1.33325 7.99999 1.33325C6.15904 1.33325 4.66666 4.31802 4.66666 7.99992C4.66666 11.6818 6.15904 14.6666 7.99999 14.6666Z"
+                                    fill="#FCFCFD"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M14.6338 8.66659C14.6555 8.44731 14.6667 8.22492 14.6667 7.99992C14.6667 7.77492 14.6555 7.55252 14.6338 7.33325H1.36626C1.34449 7.55252 1.33334 7.77492 1.33334 7.99992C1.33334 8.22492 1.34449 8.44731 1.36626 8.66659H14.6338Z"
+                                    fill="#FCFCFD"
+                                />
+                            </svg>
+                            <select>
+                                <option value="eng">English</option>
+                                <option value="rus">Русский</option>
+                            </select>
+                        </div>
+                    </nav>
+                    <nav class="mobile-nav-bar__navigation">
+                        <button
+
+                        onclick="
+
+                        const mobileNavMobile = document.querySelector('.mobile-nav-bar__navigation')
+                        mobileNavMobile.style.transform = 'translateX(-100%)'
+
+                        "
+
+                         class="mobile-nav-bar__close-btn"></button>
+                        <ul class="mobile-nav-bar__nav-list">
+                            <li class="mobile-nav-bar__nav-item">
+                                <a class="mobile-nav-bar__nav-link" href="#" class="mobile-nav-bar__nav-link">About</a>
+                            </li>
+                            <li class="mobile-nav-bar__nav-item">
+                                <a href="./uztravel/tripplan.html" class="mobile-nav-bar__nav-link">Plan to trip</a>
+                            </li>
+                            <li class="mobile-nav-bar__nav-item">
+                                <a class="mobile-nav-bar__nav-link" href="./pages/destination.html" class="mobile-nav-bar__nav-link">Destination</a>
+                            </li>
+                            <li class="mobile-nav-bar__nav-item">
+                                <a class="mobile-nav-bar__nav-link" href="./pages/accomodation.html" class="mobile-nav-bar__nav-link">Accomodation</a>
+                            </li>
+                            <li class="mobile-nav-bar__nav-item">
+                                <a class="mobile-nav-bar__nav-link" href="./uztravel/index.html" class="mobile-nav-bar__nav-link">Food</a>
+                            </li>
+                            <li class="mobile-nav-bar__nav-item">
+                                <a class="mobile-nav-bar__nav-link" href="./pages/wishlist.html" class="mobile-nav-bar__nav-link">Wishlist</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="wishlist">
+                    <a class="wishlist-btn" href="../pages/wishlist.html" target="_blank"
+                        >Wishlist</a
+                    >
+                    <div class="notification__bell">
                         <svg
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
+                            width="18"
+                            height="19"
+                            viewBox="0 0 18 19"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M8.00001 13.3333C10.9455 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9455 2.66659 8.00001 2.66659C5.05449 2.66659 2.66668 5.0544 2.66668 7.99992C2.66668 10.9454 5.05449 13.3333 8.00001 13.3333ZM8.00001 14.6666C11.6819 14.6666 14.6667 11.6818 14.6667 7.99992C14.6667 4.31802 11.6819 1.33325 8.00001 1.33325C4.31811 1.33325 1.33334 4.31802 1.33334 7.99992C1.33334 11.6818 4.31811 14.6666 8.00001 14.6666Z"
-                                fill="#FCFCFD"
-                            />
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M9.16444 12.1177C9.65691 11.1327 9.99999 9.67876 9.99999 7.99992C9.99999 6.32108 9.65691 4.8671 9.16444 3.88216C8.6321 2.81747 8.14336 2.66659 7.99999 2.66659C7.85662 2.66659 7.36788 2.81747 6.83554 3.88216C6.34307 4.8671 5.99999 6.32108 5.99999 7.99992C5.99999 9.67876 6.34307 11.1327 6.83554 12.1177C7.36788 13.1824 7.85662 13.3333 7.99999 13.3333C8.14336 13.3333 8.6321 13.1824 9.16444 12.1177ZM7.99999 14.6666C9.84094 14.6666 11.3333 11.6818 11.3333 7.99992C11.3333 4.31802 9.84094 1.33325 7.99999 1.33325C6.15904 1.33325 4.66666 4.31802 4.66666 7.99992C4.66666 11.6818 6.15904 14.6666 7.99999 14.6666Z"
-                                fill="#FCFCFD"
-                            />
-                            <path
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M14.6338 8.66659C14.6555 8.44731 14.6667 8.22492 14.6667 7.99992C14.6667 7.77492 14.6555 7.55252 14.6338 7.33325H1.36626C1.34449 7.55252 1.33334 7.77492 1.33334 7.99992C1.33334 8.22492 1.34449 8.44731 1.36626 8.66659H14.6338Z"
-                                fill="#FCFCFD"
+                                d="M18 15.0233C18 15.5113 17.6043 15.907 17.1163 15.907H0.88372C0.395655 15.907 0 15.5113 0 15.0233C0 14.5352 0.395656 14.1395 0.883721 14.1395H0.9V7.98088C0.9 3.57288 4.527 0 9 0C13.473 0 17.1 3.57288 17.1 7.98088V14.1395H17.1163C17.6043 14.1395 18 14.5352 18 15.0233ZM2.7 14.1395H15.3V7.98088C15.3 4.5494 12.4794 1.76744 9 1.76744C5.5206 1.76744 2.7 4.5494 2.7 7.98088V14.1395ZM6.97604 17.7558C6.73121 17.2608 7.19772 16.7907 7.75 16.7907H10.25C10.8023 16.7907 11.2688 17.2608 11.024 17.7558C10.9155 17.9751 10.7699 18.1773 10.591 18.3529C10.169 18.7672 9.59674 19 9 19C8.40326 19 7.83097 18.7672 7.40901 18.3529C7.23013 18.1773 7.08449 17.9751 6.97604 17.7558Z"
+                                fill="#033E8C"
                             />
                         </svg>
-                        <select>
-                            <option value="eng">English</option>
-                            <option value="rus">Русский</option>
-                        </select>
                     </div>
-                </nav>
-            </div>
-            <div class="wishlist">
-                <a class="wishlist-btn" href="../pages/wishlist.html" target="_blank"
-                    >Wishlist</a
-                >
-                <div class="notification__bell">
-                    <svg
-                        width="18"
-                        height="19"
-                        viewBox="0 0 18 19"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="M18 15.0233C18 15.5113 17.6043 15.907 17.1163 15.907H0.88372C0.395655 15.907 0 15.5113 0 15.0233C0 14.5352 0.395656 14.1395 0.883721 14.1395H0.9V7.98088C0.9 3.57288 4.527 0 9 0C13.473 0 17.1 3.57288 17.1 7.98088V14.1395H17.1163C17.6043 14.1395 18 14.5352 18 15.0233ZM2.7 14.1395H15.3V7.98088C15.3 4.5494 12.4794 1.76744 9 1.76744C5.5206 1.76744 2.7 4.5494 2.7 7.98088V14.1395ZM6.97604 17.7558C6.73121 17.2608 7.19772 16.7907 7.75 16.7907H10.25C10.8023 16.7907 11.2688 17.2608 11.024 17.7558C10.9155 17.9751 10.7699 18.1773 10.591 18.3529C10.169 18.7672 9.59674 19 9 19C8.40326 19 7.83097 18.7672 7.40901 18.3529C7.23013 18.1773 7.08449 17.9751 6.97604 17.7558Z"
-                            fill="#033E8C"
-                        />
-                    </svg>
+                    <div class="profile__img">
+                        <a href="../pages/profile.html"><img src="../assets/icons/profile__img.jpg" alt="img" /></a>  
+                    </div>
                 </div>
-                <div class="profile__img">
-                    <a href="../pages/profile.html"><img src="../assets/profile__img.png" alt="img" /></a>  
-                </div>
+
+                <button
+
+                onclick="
+
+                const mobileNavBar = document.querySelector('.mobile-nav-bar__navigation')
+
+                mobileNavBar.style.transform = 'translateX(0%)'
+
+                "
+
+                class="mobile-nav__open-btn"class="nav-bar__open-btn">
+                    <img src="../assets/icons/nav-bar-btn.svg" alt="mobileNavOper">
+                </button>
             </div>
         </div>
-      </div>
     </header>
     <main>
       <section class="container">
@@ -244,7 +292,7 @@
       <section class="container">
         <div class="booking__cards">
           <div class="booking__card booking__airlines" data-filter="airlines">
-              <img src="./assets/images/booking/Uzbekairways.png" alt="" />
+              <img class="booking__card-img" src="./assets/images/booking/Uzbekairways.png" alt="" />
               <div class="booking__card-general">
                 <div class="booking__card-text-block">
                   <p class="booking__card-title">Uzbekistan Airways</p>
@@ -263,7 +311,7 @@
               </div>
           </div>
           <div class="booking__card booking__airlines" data-filter="airlines">
-            <img src="./assets/images/booking/airways-2.png" alt="" />
+            <img class="booking__card-img" src="./assets/images/booking/airways-2.png" alt="" />
             <div class="booking__card-general">
               <div class="booking__card-text-block">
                 <p class="booking__card-title">Air Marakanda (Samarkand International Airport Service)</p>
@@ -282,7 +330,7 @@
             </div>
           </div>
           <div class="booking__card booking__airlines" data-filter="airlines">
-            <img src="./assets/images/booking/airways-3.png" alt="" />
+            <img class="booking__card-img" src="./assets/images/booking/airways-3.png" alt="" />
             <div class="booking__card-general">
               <div class="booking__card-text-block">
                 <p class="booking__card-title">Tashkent Aero (Travel Agency)</p>
@@ -301,7 +349,7 @@
             </div>
           </div>
           <div class="booking__card booking__airlines" data-filter="airlines">
-            <img src="./assets/images/booking/Uzbekairways.png" alt="" />
+            <img class="booking__card-img" src="./assets/images/booking/Uzbekairways.png" alt="" />
             <div class="booking__card-general">
               <div class="booking__card-text-block">
                 <p class="booking__card-title">Uzbekistan Airways</p>
@@ -321,7 +369,7 @@
           </div>
 
           <div class="booking__card booking__railway"  data-filter="railway">
-              <img src="./assets/images/booking/railway.jpg" alt="" />
+              <img class="booking__card-img" src="./assets/images/booking/railway.jpg" alt="" />
               <div class="booking__card-general">
                 <div class="booking__card-text-block">
                   <p class="booking__card-title">Tashkent Central Railway Station (Toshkent Markaziy Vokzal)</p>
@@ -347,11 +395,7 @@
           <div class="footer__box">
               <div class="logo__section footer__logo">
                   <img src="../assets/logo.png" alt="logo" />
-                  <img
-                  class="nav__logo-slogan"
-                  src="../assets/Frame 1261154401.png"
-                  alt=""
-                  />
+                  <img src="../assets/Frame 1261154401.png" alt="">
               </div>
               <div class="information">
                   <p>Information</p>

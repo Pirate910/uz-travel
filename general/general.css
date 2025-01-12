@@ -17,7 +17,8 @@ button{
 
 @media (max-width: 375px) {
     .container{
-        max-width: 315px;
+        max-width: 360px;
+        padding: 0 15px;
         margin: 0 auto;
     }
 }
