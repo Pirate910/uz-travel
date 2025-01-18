@@ -747,7 +747,6 @@
 }
 
 .join__section {
-    height: 702px;
     background-color: #033e8c;
     position: relative;
 }
@@ -1049,6 +1048,56 @@ footer {
     .search__last-btn,
     .price__type-samolyot{
         display: none;
+    }
+
+    .join{
+        flex-wrap: wrap;
+        gap: 0;
+        position: relative;
+        z-index: 100;
+    }
+
+    .join__images,
+    .cloud3,
+    .join__on h3 br,
+    .join1svg,
+    .join2svg,
+    .join3svg,
+    .join4svg,
+    .join5svg{
+        display: none;
+    }
+
+    .cloud1{
+        top: 150px;
+        right: -80px;
+    }
+
+    .cloud2{
+        right: 100px;
+        top: 130px;
+    }
+
+    .join__inp{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .join__on h3{
+        font-size: 32px;
+        text-align: center;
+        letter-spacing: -.32px;
+        line-height: 40px;        
+    }
+
+    .join__on{
+        width: 100%;
+        margin-top: 50px;
+        padding-bottom: 400px;
+    }
+
+    .join__on p{
+        text-align: center;
     }
 
 }

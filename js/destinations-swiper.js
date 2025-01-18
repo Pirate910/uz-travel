@@ -13,7 +13,7 @@ const destSwiper = new Swiper(".adventures__cards", {
           slidesPerView: 1,
       },
 
-      768: {
+      1200: {
         slidesPerView: 4,
       },
 
