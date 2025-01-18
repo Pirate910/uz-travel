@@ -8,6 +8,16 @@ const destSwiper = new Swiper(".adventures__cards", {
     // Отключите управление стилями Swiper, если это возможно
     autoHeight: false,
 
+    breakpoints: {
+      300: {
+          slidesPerView: 1,
+      },
+
+      768: {
+        slidesPerView: 4,
+      },
+
+    },
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',

@@ -29,7 +29,6 @@
 }
 
 .search {
-    height: 208px;
     background-color: #033e8c;
     border-radius: 24px;
     padding-top: 16px;
@@ -89,17 +88,19 @@
 }
 
 .search div:last-child {
-    margin-top: 16px;
     text-align: center;
 }
 
 .search div:last-child button {
-    width: 32px;
-    height: 32px;
     border: 2px solid #05dbf3;
     border-radius: 100px;
     background-color: transparent;
     cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.mobile-accomodation-price{
+    display: none;
 }
 
 .accomodation__price-type-section {
@@ -932,4 +933,122 @@ footer {
 
 .footer__logo-section {
     margin-top: 50px;
+}
+
+@media (max-width: 375px){
+
+    .uzbekistan__section{
+        background: url("../assets/background/accomodation-background.jpg") lightgray 50% no-repeat;
+        height: 300px;
+        background-size: cover;
+    }
+
+    .search__top{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .accomodation__price-type{
+        flex-wrap: wrap;
+    }
+
+    .search__icon{
+        margin-top: 16px;
+        margin-right: auto;
+    }
+
+    .region__inp{
+        margin-bottom: 24px;
+    }
+
+    .search{
+        padding-bottom: 20px;
+    }
+
+    .desktop-accomodation-price{
+        display: none;
+    }
+    
+    .first__checkbox,
+    .second__checkbox,
+    .last__checkbox{
+        margin-top: 24px;
+    }
+
+    .search hr{
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+
+
+    .price__range p{
+        color: #fcfcfd;
+        text-transform: uppercase;
+    }
+
+    .slider__lables span{
+        color: #fcfcfd;
+    }
+
+    .slider__lables span:last-child{
+        display: none;
+    }
+
+    .mobile-accomodation-price{
+        display: block;
+    }
+
+    .stars p{
+        text-align: start;
+        color: #fcfcfd;
+    }
+
+    .search div:last-child button{
+        background-color: #05DBF3;
+    }
+
+    .accomodation__price-type-section .container{
+        padding: 0;
+    }
+
+    .accomodation__card-item,
+    .accomodation__card-item img{
+        border-radius: 0;
+    }
+
+    .accomodation__card-item img,
+    .accomodation__card-item-img{
+        height: 170px;
+    }
+
+    .accomodation__type{
+        max-width: 100%;
+    }
+
+    .accomodation__type-btns{
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .accomodation__card-item{
+        max-height: 170px;
+        width: 360px;
+    }
+
+    .first__hr,
+    .day,
+    .period__day-names,
+    .first__inp-btn,
+    .start__date,
+    .end__date,
+    .second__hr,
+    .favorite,
+    .third__hr,
+    .search__last-btn,
+    .price__type-samolyot{
+        display: none;
+    }
+
 }

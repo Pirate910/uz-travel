@@ -16,6 +16,7 @@
         <script src="../js/accomodation-filter.js" defer></script>
     </head>
     <body>
+        
         <header>
             <div class="container">
                 <div class="log">
@@ -26,9 +27,11 @@
                         src="../assets/Frame 1261154401.png"
                         alt=""
                         />
+                        <img class="mobile-nav-logo" src="../assets/icons/Frame 1261154401.png" alt="">
                     </a>
+    
                     <div class="navigation__menu">
-                        <nav>
+                        <nav class="navigation__menu-nav">
                             <ul>
                                 <li>
                                     <a href="#">About</a>
@@ -42,14 +45,14 @@
                                 </li>
                                 <li>
                                     <a
-                                        href="./destination.html"
+                                        href="./pages/destination.html"
                                         target="_blank"
                                         >Destination</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="./accomodation.html"
+                                        href="./pages/accomodation.html"
                                         target="_blank"
                                         >Accomodation</a
                                     >
@@ -95,9 +98,41 @@
                                 </select>
                             </div>
                         </nav>
+                        <nav class="mobile-nav-bar__navigation">
+                            <button
+    
+                            onclick="
+    
+                            const mobileNavMobile = document.querySelector('.mobile-nav-bar__navigation')
+                            mobileNavMobile.style.transform = 'translateX(-100%)'
+    
+                            "
+    
+                             class="mobile-nav-bar__close-btn"></button>
+                            <ul class="mobile-nav-bar__nav-list">
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="#" class="mobile-nav-bar__nav-link">About</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a href="../uztravel/tripplan.html" class="mobile-nav-bar__nav-link">Plan to trip</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./destination.html" class="mobile-nav-bar__nav-link">Destination</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./accomodation.html" class="mobile-nav-bar__nav-link">Accomodation</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="../uztravel/index.html" class="mobile-nav-bar__nav-link">Food</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./wishlist.html" class="mobile-nav-bar__nav-link">Wishlist</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="wishlist">
-                        <a class="wishlist-btn" href="./wishlist.html" target="_blank"
+                        <a class="wishlist-btn" href="../pages/wishlist.html" target="_blank"
                             >Wishlist</a
                         >
                         <div class="notification__bell">
@@ -115,9 +150,23 @@
                             </svg>
                         </div>
                         <div class="profile__img">
-                            <a href="./profile.html"><img src="../assets/profile__img.png" alt="img" /></a>  
+                            <a href="./pages/profile.html"><img src="../assets/icons/profile__img.jpg" alt="img" /></a>  
                         </div>
                     </div>
+    
+                    <button
+    
+                    onclick="
+    
+                    const mobileNavBar = document.querySelector('.mobile-nav-bar__navigation')
+    
+                    mobileNavBar.style.transform = 'translateX(0%)'
+    
+                    "
+    
+                    class="mobile-nav__open-btn"class="nav-bar__open-btn">
+                        <img src="../assets/icons/nav-bar-btn.svg" alt="mobileNavOper">
+                    </button>
                 </div>
             </div>
         </header>
@@ -181,8 +230,312 @@
                         </button>
                     </div>
                     <hr />
+                    <div class="mobile-accomodation-price accomodation__price">
+                        <div class="price__range">
+                            <p>PRICE RANGE</p>
+                            <input
+                                type="range"
+                                min="100"
+                                max="1000"
+                                value="1000"
+                                class="range__slider"
+                                id="slider"
+                            />
+                            <div class="slider__value" id="slider__value">
+                                $500
+                            </div>
+                            <div class="slider__lables">
+                                <span>$100</span>
+                                <span>$1000</span>
+                            </div>
+                        </div>
+                        <hr class="first__hr" />
+                        <div class="price__day">
+                            <p class="day">DAY</p>
+                            <div class="period__day">
+                                <div class="period__day-names">
+                                    <p>PERIOD</p>
+                                    <p>DAY</p>
+                                </div>
+                                <div class="first__inp-btn">
+                                    <input type="number" placeholder="3" />
+                                </div>
+                                <div class="start__date">
+                                    <p class="date__start">START DATE</p>
+                                    <div class="start__date-inp-btn">
+                                        <input
+                                            type="date"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="end__date">
+                                    <p class="data__end">END DATE</p>
+                                    <div class="end__data-inp-btn">
+                                        <input
+                                            type="text"
+                                            placeholder="30/12/2024"
+                                        />
+                                        <button>
+                                            <svg
+                                                width="10"
+                                                height="6"
+                                                viewBox="0 0 10 6"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M9.20711 0.792893C8.81658 0.402369 8.18342 0.402369 7.79289 0.792893L5 3.58579L2.20711 0.792893C1.81658 0.402369 1.18342 0.402369 0.792894 0.792893C0.402369 1.18342 0.402369 1.81658 0.792894 2.20711L4.29289 5.70711C4.68342 6.09763 5.31658 6.09763 5.70711 5.70711L9.20711 2.20711C9.59763 1.81658 9.59763 1.18342 9.20711 0.792893Z"
+                                                    fill="#EBECEF"
+                                                />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <hr class="second__hr" />
+                                <div class="favorite">
+                                    <p>FAVORITE</p>
+                                    <div class="on__off"></div>
+                                </div>
+                                <hr class="third__hr" />
+                                <div class="stars">
+                                    <p>STARS</p>
+                                    <div class="first__checkbox">
+                                        <input id="5" type="checkbox" />
+                                        <div class="stars__svg">
+                                            <svg
+                                                width="24"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="second__checkbox">
+                                        <input id="4" type="checkbox" />
+                                        <div class="stars__svg">
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M8.52251 6.93361C8.42147 7.17558 8.19367 7.3408 7.93228 7.36167L3.18301 7.74094C2.56159 7.79057 2.31014 8.56657 2.78437 8.97121L6.39879 12.0554C6.59901 12.2262 6.68647 12.4949 6.62518 12.7509L5.52021 17.3652C5.37527 17.9704 6.03313 18.4497 6.56481 18.1262L10.6362 15.649C10.8597 15.5131 11.1404 15.5131 11.3639 15.649L15.4353 18.1262C15.967 18.4497 16.6248 17.9704 16.4799 17.3652L15.3749 12.7509C15.3137 12.4949 15.4011 12.2262 15.6013 12.0554L19.2158 8.97121C19.69 8.56657 19.4385 7.79057 18.8171 7.74094L14.0678 7.36167C13.8065 7.3408 13.5787 7.17558 13.4776 6.93361L11.646 2.54699C11.4065 1.97327 10.5937 1.97327 10.3541 2.54699L8.52251 6.93361ZM15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#B1B5C4"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="last__checkbox">
+                                        <input id="3" type="checkbox" />
+                                        <div class="stars__svg">
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#05DBF3"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M8.52251 6.93361C8.42147 7.17558 8.19367 7.3408 7.93228 7.36167L3.18301 7.74094C2.56159 7.79057 2.31014 8.56657 2.78437 8.97121L6.39879 12.0554C6.59901 12.2262 6.68647 12.4949 6.62518 12.7509L5.52021 17.3652C5.37527 17.9704 6.03313 18.4497 6.56481 18.1262L10.6362 15.649C10.8597 15.5131 11.1404 15.5131 11.3639 15.649L15.4353 18.1262C15.967 18.4497 16.6248 17.9704 16.4799 17.3652L15.3749 12.7509C15.3137 12.4949 15.4011 12.2262 15.6013 12.0554L19.2158 8.97121C19.69 8.56657 19.4385 7.79057 18.8171 7.74094L14.0678 7.36167C13.8065 7.3408 13.5787 7.17558 13.4776 6.93361L11.646 2.54699C11.4065 1.97327 10.5937 1.97327 10.3541 2.54699L8.52251 6.93361ZM15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#B1B5C4"
+                                                />
+                                            </svg>
+                                            <svg
+                                                width="22"
+                                                height="21"
+                                                viewBox="0 0 22 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M8.52251 6.93361C8.42147 7.17558 8.19367 7.3408 7.93228 7.36167L3.18301 7.74094C2.56159 7.79057 2.31014 8.56657 2.78437 8.97121L6.39879 12.0554C6.59901 12.2262 6.68647 12.4949 6.62518 12.7509L5.52021 17.3652C5.37527 17.9704 6.03313 18.4497 6.56481 18.1262L10.6362 15.649C10.8597 15.5131 11.1404 15.5131 11.3639 15.649L15.4353 18.1262C15.967 18.4497 16.6248 17.9704 16.4799 17.3652L15.3749 12.7509C15.3137 12.4949 15.4011 12.2262 15.6013 12.0554L19.2158 8.97121C19.69 8.56657 19.4385 7.79057 18.8171 7.74094L14.0678 7.36167C13.8065 7.3408 13.5787 7.17558 13.4776 6.93361L11.646 2.54699C11.4065 1.97327 10.5937 1.97327 10.3541 2.54699L8.52251 6.93361ZM15.0176 5.43115L13.4916 1.77638C12.5676 -0.436537 9.43251 -0.436517 8.50853 1.77638L6.98251 5.43115L3.0238 5.74729C0.626875 5.9387 -0.342974 8.93184 1.48617 10.4926L4.49467 13.0597L3.5752 16.8994C3.01616 19.234 5.55359 21.0826 7.60437 19.8348L11.0001 17.7688L14.3958 19.8348C16.4465 21.0826 18.984 19.2339 18.4249 16.8994L17.5055 13.0597L20.514 10.4926C22.3431 8.93183 21.3732 5.9387 18.9763 5.74729L15.0176 5.43115Z"
+                                                    fill="#B1B5C4"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="fourth__hr" />
+                                <button class="reset__filter">
+                                    Reset filter
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div>
-                        <button>
+                        <button class="search__last-btn">
                             <svg
                                 width="10"
                                 height="6"
@@ -206,7 +559,7 @@
         <section class="accomodation__price-type-section">
             <div class="container">
                 <div class="accomodation__price-type">
-                    <div class="accomodation__price">
+                    <div class="accomodation__price desktop-accomodation-price">
                         <div class="price__range">
                             <p>PRICE RANGE</p>
                             <input

@@ -10,6 +10,11 @@ const accomodationSwiper = new Swiper(".accomodation__cards-swiper", {
         300: {
             slidesPerView: 1,
         },
+
+        1200: {
+            slidesPerView: 3,
+        },
+
     }
 
     // Отключите управление стилями Swiper, если это возможно

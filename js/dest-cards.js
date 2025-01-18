@@ -17,6 +17,9 @@ const destSwiper = new Swiper(".d-sw", {
       300: {
         slidesPerView: 1,
       },
+      1200: {
+        slidesPerView: 3,
+      },
     },
   
     // Navigation arrows

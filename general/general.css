@@ -407,6 +407,7 @@ footer hr {
     .nav__logo-slogan {
         width: 118px;
         height: 45px;
+        display: none;
     }
 
     .nav__logo-slogan{
@@ -482,7 +483,6 @@ footer hr {
     .mobile-nav-bar__nav-list {
         display: flex;
         flex-direction: column;
-        margin-top: 35px;
     }
     
     .navigation__menu ul {

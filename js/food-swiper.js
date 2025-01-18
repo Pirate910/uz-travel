@@ -11,6 +11,11 @@ const swiper = new Swiper('.swiper', {
       300:{
           slidesPerView: 1,
       },
+
+      1200: {
+        slidesPerView: 4,
+      },
+
     },
 
     // If we need pagination
