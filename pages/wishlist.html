@@ -26,30 +26,32 @@
                         src="../assets/Frame 1261154401.png"
                         alt=""
                         />
+                        <img class="mobile-nav-logo" src="../assets/icons/Frame 1261154401.png" alt="">
                     </a>
+    
                     <div class="navigation__menu">
-                        <nav>
+                        <nav class="navigation__menu-nav">
                             <ul>
                                 <li>
                                     <a href="#">About</a>
                                 </li>
                                 <li>
                                     <a
-                                        href="../uztravel/tripplan.html"
+                                        href="./uztravel/tripplan.html"
                                         target="_blank"
                                         >Plan to trip</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="./destination.html"
+                                        href="../pages/destination.html"
                                         target="_blank"
                                         >Destination</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        href="./accomodation.html"
+                                        href="../pages/accomodation.html"
                                         target="_blank"
                                         >Accomodation</a
                                     >
@@ -95,9 +97,41 @@
                                 </select>
                             </div>
                         </nav>
+                        <nav class="mobile-nav-bar__navigation">
+                            <button
+    
+                            onclick="
+    
+                            const mobileNavMobile = document.querySelector('.mobile-nav-bar__navigation')
+                            mobileNavMobile.style.transform = 'translateX(-100%)'
+    
+                            "
+    
+                             class="mobile-nav-bar__close-btn"></button>
+                            <ul class="mobile-nav-bar__nav-list">
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="#" class="mobile-nav-bar__nav-link">About</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a href="./uztravel/tripplan.html" class="mobile-nav-bar__nav-link">Plan to trip</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="../pages/destination.html" class="mobile-nav-bar__nav-link">Destination</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="../pages/accomodation.html" class="mobile-nav-bar__nav-link">Accomodation</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="./uztravel/index.html" class="mobile-nav-bar__nav-link">Food</a>
+                                </li>
+                                <li class="mobile-nav-bar__nav-item">
+                                    <a class="mobile-nav-bar__nav-link" href="../pages/wishlist.html" class="mobile-nav-bar__nav-link">Wishlist</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                     <div class="wishlist">
-                        <a class="wishlist-btn" href="./wishlist.html" target="_blank"
+                        <a class="wishlist-btn" href="../pages/wishlist.html" target="_blank"
                             >Wishlist</a
                         >
                         <div class="notification__bell">
@@ -115,9 +149,23 @@
                             </svg>
                         </div>
                         <div class="profile__img">
-                            <a href="./profile.html"><img src="../assets/profile__img.png" alt="img" /></a>  
+                            <a href="../pages/profile.html"><img src="../assets/icons/profile__img.jpg" alt="img" /></a>  
                         </div>
                     </div>
+    
+                    <button
+    
+                    onclick="
+    
+                    const mobileNavBar = document.querySelector('.mobile-nav-bar__navigation')
+    
+                    mobileNavBar.style.transform = 'translateX(0%)'
+    
+                    "
+    
+                    class="mobile-nav__open-btn"class="nav-bar__open-btn">
+                        <img src="../assets/icons/nav-bar-btn.svg" alt="mobileNavOper">
+                    </button>
                 </div>
             </div>
         </header>
@@ -173,11 +221,7 @@
                 <div class="footer__box">
                     <div class="logo__section footer__logo">
                         <img src="../assets/logo.png" alt="logo" />
-                        <img
-                        class="nav__logo-slogan"
-                        src="../assets/Frame 1261154401.png"
-                        alt=""
-                        />
+                        <img src="../assets/Frame 1261154401.png" alt="">
                     </div>
                     <div class="information">
                         <p>Information</p>
